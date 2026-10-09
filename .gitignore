@@ -1,0 +1,49 @@
+# Sesi dan autentikasi WhatsApp
+*sessions/
+*sesi/
+auth_info_baileys/
+.wwebjs_auth/
+.wwebjs_cache/
+
+# File rahasia dan API key
+.env
+.env.*
+!.env.example
+api.env
+*.env
+
+# Dependencies
+node_modules/
+
+# Data pengguna dan saldo
+database/users.json
+
+# Log
+*.log
+logs/
+npm-debug.log*
+
+# File sementara dan hasil generate
+folder-tree.txt
+coverage/
+dist/
+tmp/
+temp/
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor
+.vscode/
+
+# Sesi WhatsApp
+sessions/
+
+# Data runtime
+database/users.json
+utils/tokenStats.json
+
+# File sementara
+folder-tree.txt

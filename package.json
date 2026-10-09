@@ -1,0 +1,21 @@
+{
+    "name": "Joy",
+    "version": "1.0",
+    "description": "whatsapp bot",
+    "main": "index.js",
+    "scripts": {
+        "authhor": "HILAL",
+        "license": "No License",
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "aki-api": "^7.0.1",
+        "axios": "^1.20.0",
+        "baileys": "6.7.17",
+        "chalk": "^4.1.2",
+        "dotenv": "^18.0.3",
+        "pino": "^8.14.1",
+        "readline": "1.3.0",
+        "sharp": "^0.32.6"
+    }
+}
