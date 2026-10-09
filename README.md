@@ -46,7 +46,3 @@ Joybot menggunakan Node.js dan Baileys untuk koneksi WhatsApp. Beberapa library 
 3. Isi konfigurasi pada file `api.env` sesuai nama variabel yang dibaca oleh kode, termasuk API key yang diperlukan.
 4. Jalankan file utama bot menggunakan Node.js. Jika file utamanya `index.js`, perintahnya `node index.js`. Jika `package.json` sudah memiliki script `start`, kamu juga bisa menjalankan `npm start`.
 5. Ikuti proses pairing WhatsApp yang muncul di terminal.
-
-## Catatan
-
-Jangan unggah `api.env`, kredensial API, atau folder sesi WhatsApp seperti `JoySesi` ke repositori publik. Folder database pengguna juga dapat berisi data akun dan saldo, jadi pastikan file tersebut tidak ikut dibagikan tanpa sengaja.
