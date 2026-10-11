@@ -1,3 +1,36 @@
+const suppressedSessionMessages = [
+    "Closing session:",
+    "Closing stale open session",
+    "Closing open session in favor of incoming prekey bundle",
+    "Decrypted message with closed session",
+    "Removing old closed session:",
+    "Opening session:"
+];
+
+function shouldSuppressSessionLog(args) {
+    const message =
+        typeof args[0] === "string"
+            ? args[0]
+            : "";
+
+    return suppressedSessionMessages.some(
+        (prefix) => message.includes(prefix)
+    );
+}
+
+for (const method of ["log", "info", "warn"]) {
+    const originalMethod =
+        console[method].bind(console);
+
+    console[method] = (...args) => {
+        if (shouldSuppressSessionLog(args)) {
+            return;
+        }
+
+        originalMethod(...args);
+    };
+}
+
 const {
   makeWASocket,
   useMultiFileAuthState,
@@ -11,6 +44,31 @@ const pino = require("pino");
 const chalk = require("chalk");
 const readline = require("readline");
 
+
+// const originalConsoleLog = console.log.bind(console);
+
+// console.log = (...args) => {
+//     const message =
+//         typeof args[0] === "string" ? args[0] : "";
+
+//     const ignoredLogs = [
+//         "Closing session:",
+//         "Closing stale open session",
+//         "Closing open session in favor of incoming prekey bundle",
+//         "Removing old closed session:"
+//     ];
+
+//     if (
+//         ignoredLogs.some((prefix) =>
+//             message.startsWith(prefix)
+//         )
+//     ) {
+//         return;
+//     }
+
+//     originalConsoleLog(...args);
+// };
+
 const messageHandler = require("./handlers/messageHandler");
 
 const usePairingCode = true;
@@ -23,6 +81,7 @@ const usePairingCode = true;
 const BOT_NAME = "JOYBOT";
 const BOT_VERSION = "v1.0.0";
 const AUTHOR = "Hilal";
+const AUTHOR_NUMBER = "222079890813069";
 
 const PROJECT_ROOT = __dirname;
 
@@ -818,12 +877,38 @@ async function connectToWhatsApp() {
     });
 
 
-  Joy.sentMessages =
-    new Set();
+Joy.sentMessages = new Set();
+Joy.sentMessageKeys = new Map();
 
-
-  const originalSendMessage =
+const originalSendMessage =
     Joy.sendMessage.bind(Joy);
+
+Joy.sendMessage = async (...args) => {
+    const result = await originalSendMessage(...args);
+
+    const content = args[1];
+
+    const isDeleteMessage =
+        content &&
+        typeof content === "object" &&
+        Boolean(content.delete);
+
+    if (result?.key?.id && !isDeleteMessage) {
+        const chatId =
+            result.key.remoteJid || args[0];
+
+        const trackingKey =
+            `${chatId}:${result.key.id}`;
+
+        Joy.sentMessages.add(trackingKey);
+        Joy.sentMessageKeys.set(
+            trackingKey,
+            result.key
+        );
+    }
+
+    return result;
+};
 
 
   Joy.sendMessage =
@@ -833,6 +918,20 @@ async function connectToWhatsApp() {
         await originalSendMessage(
           ...args
         );
+
+        const sentText = args[1]?.text;
+
+        if (
+            typeof sentText === "string" &&
+            sentText.trim()
+        ) {
+            console.log(
+                chalk.green.bold("[BOT]"),
+                chalk.green.bold(BOT_NAME),
+                chalk.gray(" : "),
+                chalk.white(sentText)
+            );
+        }
 
 
       if (
@@ -993,62 +1092,34 @@ async function connectToWhatsApp() {
         "";
 
 
-      const pushname =
-        msg.pushName ||
-        "Joy";
+      const pushname = msg.pushName || "Unknown";
 
+      const senderJid =
+          msg.key.participant || msg.key.remoteJid || "";
 
-      const listColor = [
+      const senderNumber = String(senderJid)
+          .split("@")[0]
+          .split(":")[0];
 
-        "red",
+      if (!msg.key.fromMe) {
+          const isAuthorMessage =
+              senderNumber === AUTHOR_NUMBER;
 
-        "green",
+          const roleLabel = isAuthorMessage
+              ? chalk.magenta.bold("[AUTHOR]")
+              : chalk.cyan("[USER]");
 
-        "yellow",
+          const coloredName = isAuthorMessage
+              ? chalk.magenta.bold(pushname)
+              : chalk.cyan(pushname);
 
-        "magenta",
-
-        "cyan",
-
-        "white",
-
-        "blue"
-
-      ];
-
-
-      const randomColor =
-        listColor[
-          Math.floor(
-            Math.random() *
-            listColor.length
-          )
-        ];
-
-
-      console.log(
-
-        chalk.yellow.bold(
-          "Credit : Joy"
-        ),
-
-        chalk.green.bold(
-          "[ WhatsApp ]"
-        ),
-
-        chalk[randomColor](
-          pushname
-        ),
-
-        chalk[randomColor](
-          " : "
-        ),
-
-        chalk.white(
-          body
-        )
-
-      );
+          console.log(
+              roleLabel,
+              coloredName,
+              chalk.gray(" : "),
+              chalk.white(body)
+          );
+      }
 
 
       try {

@@ -1,0 +1,3482 @@
+[
+  {
+    "id": 1,
+    "soal": "Hewan sejenis kadal yang dapat merubah warna kulitnya?",
+    "jawaban": "Bunglon"
+  },
+  {
+    "id": 2,
+    "soal": "Hewan sejenis kadal yang dapat merubah warna kulitnya?",
+    "jawaban": "Bunglon"
+  },
+  {
+    "id": 3,
+    "soal": "Surat instruksi kepada Soeharto untuk mengambil alih keamanan Indonesia pada tanggal 11 Maret 1966?",
+    "jawaban": "Supersemar"
+  },
+  {
+    "id": 4,
+    "soal": "Sungai terpanjang di Benua Amerika?",
+    "jawaban": "Amazon"
+  },
+  {
+    "id": 5,
+    "soal": "Wanita yang tercatat dalam sejarah sebagai penjahit Bendera Pusaka Indonesia?",
+    "jawaban": "Fatmawati"
+  },
+  {
+    "id": 6,
+    "soal": "Lomba lari jarak jauh sepanjang 42,195 km?",
+    "jawaban": "Marathon"
+  },
+  {
+    "id": 7,
+    "soal": "Garis yang membagi Bumi menjadi dua bagian belahan utara dan belahan selatan?",
+    "jawaban": "Khatulistiwa"
+  },
+  {
+    "id": 8,
+    "soal": "Kota yang berdiri sejak tahun 682 ini disebut sebagai kota tertua di Indonesia?",
+    "jawaban": "Palembang"
+  },
+  {
+    "id": 9,
+    "soal": "Sebutan untuk gaya tarik-menarik yang terjadi di alam semesta termasuk Bumi?",
+    "jawaban": "Gravitasi"
+  },
+  {
+    "id": 10,
+    "soal": "Nama film yang bercerita tentang robot yang dapat berubah menjadi kendaran?",
+    "jawaban": "Transformers"
+  },
+  {
+    "id": 11,
+    "soal": "Petarung di zaman Romawi Kuno yang melakukan pertarungan untuk hiburan umum?",
+    "jawaban": "Gladiator"
+  },
+  {
+    "id": 12,
+    "soal": "Nama kapal penumpang mewah yang tenggelam saat pelayaran perdana tahun 1912?",
+    "jawaban": "Titanic"
+  },
+  {
+    "id": 13,
+    "soal": "Klub sepak bola dari Italia yang memiliki julukan Nyonya Tua?",
+    "jawaban": "Juventus"
+  },
+  {
+    "id": 14,
+    "soal": "Mekanisme sistem pemerintahan negara yang berdasarkan kehendak rakyat?",
+    "jawaban": "Demokrasi"
+  },
+  {
+    "id": 15,
+    "soal": "Nama kesenian drama tari tradisional yang khas dari Bali?",
+    "jawaban": "Kecak"
+  },
+  {
+    "id": 16,
+    "soal": "Nama mata uang yang digunakan di negara Rusia?",
+    "jawaban": "Rubel"
+  },
+  {
+    "id": 17,
+    "soal": "Ilmu alam yang mengamati benda langit serta fenomena di luar atmosfer Bumi?",
+    "jawaban": "Astronomi"
+  },
+  {
+    "id": 18,
+    "soal": "Kaisar Prancis yang menguasai Benua Eropa pada tahun 1803-1815?",
+    "jawaban": "Napoleon"
+  },
+  {
+    "id": 19,
+    "soal": "Seniman terkenal dunia dari Spanyol dengan aliran seni bernama kubisme?",
+    "jawaban": "Picasso"
+  },
+  {
+    "id": 20,
+    "soal": "Nama panglima tertinggi Pasukan Sekutu pada Perang dunia II?",
+    "jawaban": "Eisenhower"
+  },
+  {
+    "id": 21,
+    "soal": "Senjata fiksi dalam dunia Star Wars, digunakan oleh Jedi dan Sith?",
+    "jawaban": "Lightsaber"
+  },
+  {
+    "id": 22,
+    "soal": "Nama semenanjung di Eropa dimana terdapat negara Norwegia dan Swedia?",
+    "jawaban": "Skandinavia"
+  },
+  {
+    "id": 23,
+    "soal": "Stadion sepak bola di London yang juga markas utama klub Arsenal FC?",
+    "jawaban": "Emirates"
+  },
+  {
+    "id": 24,
+    "soal": "Penyanyi wanita terkenal dunia, dulu berada dalam grup Destiny’s Child?",
+    "jawaban": "Beyonce"
+  },
+  {
+    "id": 25,
+    "soal": "Istilah untuk sebuah kepercayaan bahwa Tuhan adalah satu atau tunggal?",
+    "jawaban": "Monoteisme"
+  },
+  {
+    "id": 26,
+    "soal": "Nama kerajaan dimana rajanya menjadi wakil Gubernur DI Yogyakarta saat ini?",
+    "jawaban": "Pakualaman"
+  },
+  {
+    "id": 27,
+    "soal": "Disebut sebagai salah satu matematikawan terbesar sejarah, lahir pada 287 SM?",
+    "jawaban": "Archimedes"
+  },
+  {
+    "id": 28,
+    "soal": "Rangkaian pegunungan tertinggi di Indonesia, terletak di Pulau Papua?",
+    "jawaban": "Jayawijaya"
+  },
+  {
+    "id": 29,
+    "soal": "Kelompok fiksi superhero yang terdiri dari Iron Man, Captain America, Hulk, Thor?",
+    "jawaban": "Avengers"
+  },
+  {
+    "id": 30,
+    "soal": "Nama wilayah luas di Rusia, meliputi hampir seluruh wilayah Asia Utara?",
+    "jawaban": "Siberia"
+  },
+  {
+    "id": 31,
+    "soal": "Suatu benda atau media yang menghantarkan arus listrik dengan mudah?",
+    "jawaban": "Konduktor"
+  },
+  {
+    "id": 32,
+    "soal": "Nama bahasa yang digunakan di Iran, Tajikistan, Afganistan, dan Uzbekistan?",
+    "jawaban": "Farsi"
+  },
+  {
+    "id": 33,
+    "soal": "Daerah dimana terdapat praktik pertanian pertama sekitar tahun 8000 SM?",
+    "jawaban": "Mesopotamia"
+  },
+  {
+    "id": 34,
+    "soal": "Ideologi yang berdasarkan pada prinsip kepemimpinan dengan otoritas absolut?",
+    "jawaban": "Fasisme"
+  },
+  {
+    "id": 35,
+    "soal": "Nama periode geologi dari 252 ke 66 juta tahun yang lalu, disebut juga Zaman Reptil?",
+    "jawaban": "Mesozoikum"
+  },
+  {
+    "id": 36,
+    "soal": "Nama yang dikenal dalam legenda Jawab sebagai arsitek perancang Candi Borobudur?",
+    "jawaban": "Gunadharma"
+  },
+  {
+    "id": 37,
+    "soal": "Tarian tradisional Tionghoa yang menggunakan kostum menyerupai singa",
+    "jawaban": "Barongsai"
+  },
+  {
+    "id": 38,
+    "soal": "Istilah yang artinya perpindahan penduduk dari desa ke kota?",
+    "jawaban": "Urbanisasi"
+  },
+  {
+    "id": 39,
+    "soal": "Grup musik terkenal tahun 1970an asal Bandung, personelnya tiga bersaudara?",
+    "jawaban": "Bimbo"
+  },
+  {
+    "id": 40,
+    "soal": "Nama film aksi laga Indonesia tahun 2009 yang dibintangi oleh Iko Uwais?",
+    "jawaban": "Merantau"
+  },
+  {
+    "id": 41,
+    "soal": "Dikenal sebagai “maestro keroncong Indonesia”, pencipta lagu Bengawan Solo?",
+    "jawaban": "Gesang"
+  },
+  {
+    "id": 42,
+    "soal": "Skala suhu dimana titik beku air berada pada 0 derajat dan titik didih pada 100 derajat?",
+    "jawaban": "Celcius"
+  },
+  {
+    "id": 43,
+    "soal": "Makhluk halus mitos Jawa, berwujud manusia mirip kera, bertubuh besar dan berbulu?",
+    "jawaban": "Genderuwo"
+  },
+  {
+    "id": 44,
+    "soal": "Sebuah distrik di Los Angeles yang terkenal dengan industri perfilmannya yang mendunia?",
+    "jawaban": "Hollywood"
+  },
+  {
+    "id": 45,
+    "soal": "Cabang biologi yang mempelajari pewarisan sifat pada organisme maupun suborganisme?",
+    "jawaban": "Genetika"
+  },
+  {
+    "id": 46,
+    "soal": "Situs manusia purba di Jawa Tengah, juga merupakan Situs Warisan Dunia UNESCO?",
+    "jawaban": "Sangiran"
+  },
+  {
+    "id": 47,
+    "soal": "Bongkahan batu yang berukuran lebih kecil daripada planet, mengorbit Matahari?",
+    "jawaban": "Asteroid"
+  },
+  {
+    "id": 48,
+    "soal": "Istilah untuk hewan pemakan rerumputan atau tumbuhan?",
+    "jawaban": "Herbivora"
+  },
+  {
+    "id": 49,
+    "soal": "Istilah yang berarti pembantaian sistematis terhadap suatu suku atau kelompok?",
+    "jawaban": "Genosida"
+  },
+  {
+    "id": 50,
+    "soal": "Nama penyakit demam yang ditularkan oleh nyamuk Anopheles betina?",
+    "jawaban": "Malaria"
+  },
+  {
+    "id": 51,
+    "soal": "Nama tokoh fiksi budaya Sunda yang sifatnya lucu, polos, tetapi sekaligus cerdas?",
+    "jawaban": "Kabayan"
+  },
+  {
+    "id": 52,
+    "soal": "Asrama tempat belajar para siswa santri yang dibimbin oleh Kiai?",
+    "jawaban": "Pesantren"
+  },
+  {
+    "id": 53,
+    "soal": "Perusahaan video game dari Jepang, pencipta Mario Bros dan Pokemon?",
+    "jawaban": "Nintendo"
+  },
+  {
+    "id": 54,
+    "soal": "Sebuah agama resmi di Indonesia yang berdasarkan pada ajaran Konfusius?",
+    "jawaban": "Khong hu cu"
+  },
+  {
+    "id": 55,
+    "soal": "Nama ensiklopedia online yang bebas ditulis dan disunting oleh siapa saja?",
+    "jawaban": "Wikipedia"
+  },
+  {
+    "id": 56,
+    "soal": "Bangun datar segi empat, sepasang sisi sejajar namun tidak sama panjang?",
+    "jawaban": "Trapesium"
+  },
+  {
+    "id": 57,
+    "soal": "Penyakit dimana hormon pengatur gula dara dari tubuh tidak mencukupi?",
+    "jawaban": "Diabetes"
+  },
+  {
+    "id": 58,
+    "soal": "Negara independen terkecil di dunia yang diakui secara internasional?",
+    "jawaban": "Vatikan"
+  },
+  {
+    "id": 59,
+    "soal": "Kekaisaran kuno di wilayah Yunani yang dipimpin oleh Aleksander Agung?",
+    "jawaban": "Makedonia"
+  },
+  {
+    "id": 60,
+    "soal": "Negara dengan jumlah penduduk Muslim terbanyak kedua di dunia?",
+    "jawaban": "Pakistan"
+  },
+  {
+    "id": 61,
+    "soal": "Gejala penurunan fungsi otak, umumnya terjadi pada usia lanjut?",
+    "jawaban": "Demensia"
+  },
+  {
+    "id": 62,
+    "soal": "Bahan bakar fosil, digunakan di Pembangkit Listrik Tenaga Uap?",
+    "jawaban": "Batu bara"
+  },
+  {
+    "id": 63,
+    "soal": "Nama pura terkenal di Bali yang dibangun pada ujung batu karang?",
+    "jawaban": "Uluwatu"
+  },
+  {
+    "id": 64,
+    "soal": "Sebuah gelar yang diperoleh putra Sultan Agung dari Mataram?",
+    "jawaban": "Amangkurat"
+  },
+  {
+    "id": 65,
+    "soal": "Seorang yang bertugas merawat bayi atau anak pada suatu keluarga?",
+    "jawaban": "Pramusiwi"
+  },
+  {
+    "id": 66,
+    "soal": "Daerah di Jepang dimana terjadi kebocoran nuklir pada tahun 2011?",
+    "jawaban": "Fukushima"
+  },
+  {
+    "id": 67,
+    "soal": "Perlindungan finansial untuk jiwa kesehatan properti dsb?",
+    "jawaban": "Asuransi"
+  },
+  {
+    "id": 68,
+    "soal": "Perusahaan berlogo kuda asal Italia produsen mobil super dan mobil balap?",
+    "jawaban": "Ferrari"
+  },
+  {
+    "id": 69,
+    "soal": "Suku dari sulawesi selatan yang terkenal sebagai pelaut ulung?",
+    "jawaban": "Bugis"
+  },
+  {
+    "id": 70,
+    "soal": "Vampir yang merupakan tokoh utama fiksi ciptaan Bram Stoker?",
+    "jawaban": "Drakula"
+  },
+  {
+    "id": 71,
+    "soal": "Planet ini merupakan planet terbesar di Tata Surya?",
+    "jawaban": "Yupiter"
+  },
+  {
+    "id": 72,
+    "soal": "Tanaman yang dipakai sebagai bahan pembuat kertas pada Zaman Mesir Kuno?",
+    "jawaban": "Papirus"
+  },
+  {
+    "id": 73,
+    "soal": "Bahan peledak berupa bubuk campuran dari belerang, arang, dan kalium nitrat?",
+    "jawaban": "Mesiu"
+  },
+  {
+    "id": 74,
+    "soal": "Bahasa resmi yang juga digunakan secara luas di Negara Filipina?",
+    "jawaban": "Tagalog"
+  },
+  {
+    "id": 75,
+    "soal": "Negara kecil di Amerika Selatan, terdapat banyak keturunan Suku Jawa?",
+    "jawaban": "Suriname"
+  },
+  {
+    "id": 76,
+    "soal": "Kuda jantan bersayap dari mitologi Yunani?",
+    "jawaban": "Pegasus"
+  },
+  {
+    "id": 77,
+    "soal": "Grup musik Rock alternatif dari London. vokalisnya bernama Chris Martin?",
+    "jawaban": "Coldplay"
+  },
+  {
+    "id": 78,
+    "soal": "Buah yang jika dipotong mempunyai penampang berbentuk bintang?",
+    "jawaban": "Belimbing"
+  },
+  {
+    "id": 79,
+    "soal": "Ensembel musik yang biasanya menonjolkan metalofon, gambang, gendang, dan gong?",
+    "jawaban": "Gamelan"
+  },
+  {
+    "id": 80,
+    "soal": "Nama kota yang selama beberapa abad diperebutkan oleh Islam, Kristen, Yahudi?",
+    "jawaban": "Yerusalem"
+  },
+  {
+    "id": 81,
+    "soal": "Bahasa resmi negara Bangladesh, digunakan oleh sekitar 200 juta orang?",
+    "jawaban": "Bengali"
+  },
+  {
+    "id": 82,
+    "soal": "Minuman memabukkan yang berbahan dasar etanol?",
+    "jawaban": "Alkohol"
+  },
+  {
+    "id": 83,
+    "soal": "Satu-satunya gunung berapi aktif di Eropa Daratan yang letaknya di Italia?",
+    "jawaban": "Vesuvius"
+  },
+  {
+    "id": 84,
+    "soal": "Karakter fiksi berambut sangat panjang tokoh utama film animasi Tangled?",
+    "jawaban": "Rapunzel"
+  },
+  {
+    "id": 85,
+    "soal": "Bencana alam berupa gelombang ombak besar dari laut?",
+    "jawaban": "Tsunami"
+  },
+  {
+    "id": 86,
+    "soal": "Nama kota di negara Turki yang zaman dulu bernama Konstantinopel?",
+    "jawaban": "Istanbul"
+  },
+  {
+    "id": 87,
+    "soal": "Subspesies manusia yang punah dari muka bumi sekitar 30.000 tahun yang lalu?",
+    "jawaban": "Neanderthal"
+  },
+  {
+    "id": 88,
+    "soal": "Nama ritual bunuh diri kaum Samurai di Jepang dengan cara merobek perut?",
+    "jawaban": "Seppuku"
+  },
+  {
+    "id": 89,
+    "soal": "Jenis keju asal Italia yang seringkali terdapat pada hidangan pizza?",
+    "jawaban": "Mozzarella"
+  },
+  {
+    "id": 90,
+    "soal": "Gelar bagi istri dari penguasa monarki pria(raja, sultan, atau kaisar)?",
+    "jawaban": "Permaisuri"
+  },
+  {
+    "id": 91,
+    "soal": "Nama suku yang sejak lama mendiami daerah kutub utara bumi?",
+    "jawaban": "Eskimo"
+  },
+  {
+    "id": 92,
+    "soal": "Unsur paling berlimpah kedua setelah oksigen pada tubuh manusia?",
+    "jawaban": "Karbon"
+  },
+  {
+    "id": 93,
+    "soal": "Peristiwa genosida terhadap penganut Yahudi Eropa selama Perang Dunia II?",
+    "jawaban": "Holokaus"
+  },
+  {
+    "id": 94,
+    "soal": "Proses perubahan gula menjadi etanol yang dilakukan oleh ragi?",
+    "jawaban": "Fermentasi"
+  },
+  {
+    "id": 95,
+    "soal": "Ramalan dalam tradisi jawa yang membahas mengenai adanya ratu adil?",
+    "jawaban": "Jayabaya"
+  },
+  {
+    "id": 96,
+    "soal": "Tokoh abad ke 15 dari Polandia yang mencetuskan teori heliosentrisme?",
+    "jawaban": "Copernicus"
+  },
+  {
+    "id": 97,
+    "soal": "Alat populer untuk menyambung dua sisi kain, digunakan dalam pakaian, tas, dsb?",
+    "jawaban": "Ritsleting"
+  },
+  {
+    "id": 98,
+    "soal": "Satuan perbedaan potensi listrik antara dua titik dalam rangkaian listrik?",
+    "jawaban": "Voltase"
+  },
+  {
+    "id": 99,
+    "soal": "Sistem sosial yang memberikan kekuasaan besar kepada golongan bangsawan?",
+    "jawaban": "Feodalisme"
+  },
+  {
+    "id": 100,
+    "soal": "Nama pemanis buatan/sintetis yang tersusun dari dua macam asam amino?",
+    "jawaban": "Aspartam"
+  },
+  {
+    "id": 101,
+    "soal": "Konsol permainan video yang pertama kali diproduksi oleh Sony tahun 1990an?",
+    "jawaban": "PlayStation"
+  },
+  {
+    "id": 102,
+    "soal": "Nama lain pulau Kalimantan, digunakan saat zaman pemerintahan Hindia Belanda?",
+    "jawaban": "Borneo"
+  },
+  {
+    "id": 103,
+    "soal": "Batu permata atau batu mulia yang warnanya pada kisaran hijau?",
+    "jawaban": "Zamrud"
+  },
+  {
+    "id": 104,
+    "soal": "Nama museum sejarah dan kebudayaan jawa yang berada di Yogyakarta?",
+    "jawaban": "Sonobudoyo"
+  },
+  {
+    "id": 105,
+    "soal": "Cabang ilmu kedokteran yang mempelajari aspek kesehatan jiwa dan tubuh manusia?",
+    "jawaban": "Psikiatri"
+  },
+  {
+    "id": 106,
+    "soal": "Presiden pertama Amerika Serikat, juga menjadi nama Ibukota Amerika Serikat?",
+    "jawaban": "Washingthon"
+  },
+  {
+    "id": 107,
+    "soal": "Satu-satunya jenis hewan mamalia yang bisa terbang?",
+    "jawaban": "Kelelawar"
+  },
+  {
+    "id": 108,
+    "soal": "Gugus kepulauan Oseania, terdiri lebih dari 1000 kepulauan?",
+    "jawaban": "Polinesia"
+  },
+  {
+    "id": 109,
+    "soal": "Gelar penguasa monarki zaman kerajaan, tingkatnya setara dengan kaisar?",
+    "jawaban": "Maharaja"
+  },
+  {
+    "id": 110,
+    "soal": "Nama pulau yang paling berdekatan dengan negara Singapura?",
+    "jawaban": "Batam"
+  },
+  {
+    "id": 111,
+    "soal": "Cabang angkatan bersenjata berkemampuan melakukan penyerbuan secara amfibi?",
+    "jawaban": "Marinir"
+  },
+  {
+    "id": 112,
+    "soal": "Perusahaan operator seluler di Indonesia dengan pelanggan terbanyak?",
+    "jawaban": "Telkomsel"
+  },
+  {
+    "id": 113,
+    "soal": "Nama binatang bercangkang dan berkaki 10?",
+    "jawaban": "Kepiting"
+  },
+  {
+    "id": 114,
+    "soal": "Benda miniatur untuk menggabarkan suatu pemandangan atau suatu adegan?",
+    "jawaban": "Diorama"
+  },
+  {
+    "id": 115,
+    "soal": "Rumah adat masyarakat Toraja, atapnya melengkung menyerupai perahu?",
+    "jawaban": "Tonkonan"
+  },
+  {
+    "id": 116,
+    "soal": "Gua yang menjadi markas besar pangeran Diponegoro pada tahun 1825?",
+    "jawaban": "Selarong"
+  },
+  {
+    "id": 117,
+    "soal": "Sebutan untuk makhluk berwujud perempuan yang tinggal di kahyangan/surga?",
+    "jawaban": "Bidadari"
+  },
+  {
+    "id": 118,
+    "soal": "Pedang melengkung satu mata yang digunakan para Samurai Jepang?",
+    "jawaban": "Katana"
+  },
+  {
+    "id": 119,
+    "soal": "Bahan perhiasan yang diproduksi di dalam jaringan lunak hewan moluska?",
+    "jawaban": "Mutiara"
+  },
+  {
+    "id": 120,
+    "soal": "Nama perusahaan dari Finlandia pengembang game Clash of Clans?",
+    "jawaban": "Supercell"
+  },
+  {
+    "id": 121,
+    "soal": "Minuman tradisional khas Sunda, berbahan utama gula aren dan santan?",
+    "jawaban": "Bajigur"
+  },
+  {
+    "id": 122,
+    "soal": "Aliran musik yang awalnya dikembangkan di jamaika pada tahun 1960an?",
+    "jawaban": "Reggae"
+  },
+  {
+    "id": 123,
+    "soal": "Drama tradisional dari Jawa Timur, bersifat menghibur dan membuat tertawa?",
+    "jawaban": "Ludruk"
+  },
+  {
+    "id": 124,
+    "soal": "Nama asrama sekolah fiksi dimana tokoh Harry Potter belajar sihir?",
+    "jawaban": "Hogwarts"
+  },
+  {
+    "id": 125,
+    "soal": "Kota yang asal mula namanya berasal dari sejarahnya sebagai pembuat terasi?",
+    "jawaban": "Cirebon"
+  },
+  {
+    "id": 126,
+    "soal": "Pejabat umum dalam bidang hukum yang berwenang membuat akta otentik?",
+    "jawaban": "Notaris"
+  },
+  {
+    "id": 127,
+    "soal": "Jenis gula yang diproses dari karbohidrat oleh tubuh manusia?",
+    "jawaban": "Glukosa"
+  },
+  {
+    "id": 128,
+    "soal": "Pisau genggam kecil berbentuk melengkung khas dari Asia Tenggara?",
+    "jawaban": "Kerambit"
+  },
+  {
+    "id": 129,
+    "soal": "Spesies gajah purba dari genus mamut, pemakan dedaunan dan dahan pohon?",
+    "jawaban": "Mastodon"
+  },
+  {
+    "id": 130,
+    "soal": "Sumpah yang dikemukakan Gajah Mada pada upacara pengangkatannya menjadi Patih?",
+    "jawaban": "Palapa"
+  },
+  {
+    "id": 131,
+    "soal": "Produk simpanan di bank, penarikannya hanya bisa dilakukan pada waktu tertentu saja?",
+    "jawaban": "Deposito"
+  },
+  {
+    "id": 132,
+    "soal": "Gejala optik dan meteorologi berupa cahaya beraneka warna yang tampak di langit?",
+    "jawaban": "Pelangi"
+  },
+  {
+    "id": 133,
+    "soal": "Senjata roket militer yang memiliki sistem pengendali otomatis untuk mencari target?",
+    "jawaban": "Rudal"
+  },
+  {
+    "id": 134,
+    "soal": "Sindikat kejahatan terorganisir di Jepang yang memiliki cara dan hukum mereka sendiri?",
+    "jawaban": "Yakuza"
+  },
+  {
+    "id": 135,
+    "soal": "Golongan cendekiawan yang juga merupakan golongan karya atau warna dalam agama Hindu?",
+    "jawaban": "Brahmana"
+  },
+  {
+    "id": 136,
+    "soal": "Musim kering pada daerah tropis yang dipengaruhi oleh sistem muson?",
+    "jawaban": "kemarau"
+  },
+  {
+    "id": 137,
+    "soal": "Sekolah umum yang kurikulumnya terdapat pelajaran-pelajaran tentang ke-islaman?",
+    "jawaban": "Madrasah"
+  },
+  {
+    "id": 138,
+    "soal": "Tanaman yang dapat tumbuh tanpa air pada waktu yang lama, ada di daerah gurun?",
+    "jawaban": "Kaktus"
+  },
+  {
+    "id": 139,
+    "soal": "Sebuah ordo berjari lima dari mamalia, diantaranya termasuk lemur, kera, dan manusia?",
+    "jawaban": "Primata"
+  },
+  {
+    "id": 140,
+    "soal": "Blus tradisional wanita yang terbuat dari bahan tipis, dikenakan dengan sarung atau batik?",
+    "jawaban": "Kebaya"
+  },
+  {
+    "id": 141,
+    "soal": "Jenis protein yang biasanya terkandung di dalam gandum, dihindari penderita celiac?",
+    "jawaban": "Gluten"
+  },
+  {
+    "id": 142,
+    "soal": "Olahraga bela diri yang dikembangkan oleh para Afrika di Brasil pada tahun 1500an?",
+    "jawaban": "Capoeira"
+  },
+  {
+    "id": 143,
+    "soal": "Peristiwa pengikisan padatan seperti batuan/tanah akibat transportasi angin, air, atau es?",
+    "jawaban": "Erosi"
+  },
+  {
+    "id": 144,
+    "soal": "Ikan yang merupakan kerabat dekat ikan tuna, sering diolah menjadi kerupuk, siomay, pempek?",
+    "jawaban": "Ikan tenggiri"
+  },
+  {
+    "id": 145,
+    "soal": "Sebuah jenis tari pergaulan tradisional masyarakat Sunda, khusunya daerah Karawang?",
+    "jawaban": "Jaipongan"
+  },
+  {
+    "id": 146,
+    "soal": "Sistem bilangan dimana penulisan angka menggunakan dua simbol yaitu 0 dan 1?",
+    "jawaban": "Biner"
+  },
+  {
+    "id": 147,
+    "soal": "Rempah dari biji keluarga jahe-jahean, merupakan rempah termahal ketiga di dunia?",
+    "jawaban": "Kapulaga"
+  },
+  {
+    "id": 148,
+    "soal": "Benua yang meliputi Kutub Selatan bumi memiliki suhu yang sangat rendah?",
+    "jawaban": "Antartika"
+  },
+  {
+    "id": 149,
+    "soal": "Senjata pelontar yang banyak digunakan pada Abad Pertengahan untuk menghancurkan dinding?",
+    "jawaban": "Trebuset"
+  },
+  {
+    "id": 150,
+    "soal": "Serpihan putih yang merupakan pengelupasan kulit mati berlebihan di kepala?",
+    "jawaban": "Ketombe"
+  },
+  {
+    "id": 151,
+    "soal": "Ilmu yang mempelajari bahasa dalam naskah-naskah manuskrip zaman kuno?",
+    "jawaban": "Filologi"
+  },
+  {
+    "id": 152,
+    "soal": "Susu yang hanya dihasilkan pada tahap akhir kehamilan beberapa hari setelah melahirkan?",
+    "jawaban": "Kolostrum"
+  },
+  {
+    "id": 153,
+    "soal": "Tanaman asli Jepang terasa tajam/pedas yang dimakan sebagai penyedap masakan Jepang?",
+    "jawaban": "Wasabi"
+  },
+  {
+    "id": 154,
+    "soal": "Olahraga yang menggunakan tongkat pemukul, lapangannya berbentuk bujur sangkar?",
+    "jawaban": "Bisbol"
+  },
+  {
+    "id": 155,
+    "soal": "Bumbu khas untuk masakan Batak Toba yang juga dikenal sebagai merica Batak?",
+    "jawaban": "Andaliman"
+  },
+  {
+    "id": 156,
+    "soal": "Sistem pemerintahan yang dianut oleh negara Inggris, Jepang, Belanda, Malaysia, Singapura?",
+    "jawaban": "Parelementer"
+  },
+  {
+    "id": 157,
+    "soal": "Makanan tradisional Korea berupa asinan sayur hasil fermentasi yang diberi bumbu pedas?",
+    "jawaban": "Kimchi"
+  },
+  {
+    "id": 158,
+    "soal": "Istilah untuk sesuatu yang bertujuan sosial atau lingkungan, bukan bertujuan keuntungan materi?",
+    "jawaban": "Nirlaba"
+  },
+  {
+    "id": 159,
+    "soal": "Gerakan yang memperjuangkan kesetaraan bagi perempuan dalam politik, ekonomi, budaya, dsb?",
+    "jawaban": "Feminisme"
+  },
+  {
+    "id": 160,
+    "soal": "Minuman hasil fermentasi teh dan gula yang berasal dari Asia Timur?",
+    "jawaban": "Kombucha"
+  },
+  {
+    "id": 161,
+    "soal": "Kelompok garis kerras dari Rusia tahun 1903 yang berpikir perubahan harus dimenangkan dengan senjata?",
+    "jawaban": "Bolshevic"
+  },
+  {
+    "id": 162,
+    "soal": "Nama pulau vulkanik yang berada di tengah Danau Toba Sumatera Utara?",
+    "jawaban": "Samosir"
+  },
+  {
+    "id": 163,
+    "soal": "Prajurit pada zaman Yunani Kuno, berfungsi sebagai penombak dalam formasi phalanx?",
+    "jawaban": "Hoplites"
+  },
+  {
+    "id": 164,
+    "soal": "Nama dari sebuah pekan yang terdiri dari 5 hari dalam budaya Jawa dan Bali?",
+    "jawaban": "Pancawara"
+  },
+  {
+    "id": 165,
+    "soal": "Cara penyajian makanan pada masa kolonial Belanda dengan berbagai macam hidangan Nusantara?",
+    "jawaban": "Rijsttafel"
+  },
+  {
+    "id": 166,
+    "soal": "Istilah untuk budidaya menanamdengan memanfaatkan air tanpa menggunakan tanah?",
+    "jawaban": "Hidroponik"
+  },
+  {
+    "id": 167,
+    "soal": "Jenis logam paling berlimpah di Bumi, merupakan konduktor listrik yang paling baik?",
+    "jawaban": "Aluminium"
+  },
+  {
+    "id": 168,
+    "soal": "Sebuah organisasi ekonomi berdasarkan ekonomi rakyat dan asas kekeluargaan?",
+    "jawaban": "Koperasi"
+  },
+  {
+    "id": 169,
+    "soal": "Hari raya umat hindu, dirayakan setiap 210 hari menggunakan perhitungan kalender Bali?",
+    "jawaban": "Galungan"
+  },
+  {
+    "id": 170,
+    "soal": "Ilmu yang mempelajari bentuk permukaan bumi serta permukaan planet, satelit alami, asteroid?",
+    "jawaban": "Topografi"
+  },
+  {
+    "id": 171,
+    "soal": "Persembahan kepada dewa atau arwah nenek moyang oleh penganut kepercayaan kuno di Indonesia?",
+    "jawaban": "Sesajen"
+  },
+  {
+    "id": 172,
+    "soal": "Judul lagurakyat Korea, sekaligus simbol Korea, dikenal di Korea Utara maupun Korea Selatan?",
+    "jawaban": "Arirang"
+  },
+  {
+    "id": 173,
+    "soal": "Istilah bentuk bangsa pengembara yang memilih hidup berpindah-pindah untuk bertahan hidup?",
+    "jawaban": "Nomaden"
+  },
+  {
+    "id": 174,
+    "soal": "Sejenis jamur pinus langka yang menjadi bahan makanan mewah berharga mahal di Jepang?",
+    "jawaban": "Matsutake"
+  },
+  {
+    "id": 175,
+    "soal": "Suatu adat masyarakat yang mengatur alur keturunan berasal dari pihak ibu?",
+    "jawaban": "Matrilineal"
+  },
+  {
+    "id": 176,
+    "soal": "Padang rumput yang dipenuhi semak dan beberapa jenis pohon yang tumbuh menyebar?",
+    "jawaban": "Sabana"
+  },
+  {
+    "id": 177,
+    "soal": "Penjelajah asal italia yang menemukan benua amerika pada tahun 1492?",
+    "jawaban": "Capoerira"
+  },
+  {
+    "id": 178,
+    "soal": "Skor atau skala yang digunakan unuk menilai kondisi kesehatan bayi yang baru lahir?",
+    "jawaban": "Apgar"
+  },
+  {
+    "id": 179,
+    "soal": "Salah satu pulau di Sulawesi Utara yang memiliki biodiversitas kelautan tertinngi di dunia?",
+    "jawaban": "Bunaken"
+  },
+  {
+    "id": 180,
+    "soal": "Ahli pengaplikasian ilmu keuangan dan teori statistik pada persoalan bisnis aktual?",
+    "jawaban": "Aktuaris"
+  },
+  {
+    "id": 181,
+    "soal": "Tradisi sepasang pengantin meminta doa restu kepada orang tua kedua belah pihak?",
+    "jawaban": "Sungkem"
+  },
+  {
+    "id": 182,
+    "soal": "Jenis saus berwarna putih yang terbuat dari minyak nabati, telur ayam, dan cuka?",
+    "jawaban": "Mayones"
+  },
+  {
+    "id": 183,
+    "soal": "Istilah yang artinya tidak memberikan suara atau sikap dalam sebuah pemungutan suara?",
+    "jawaban": "Abstain"
+  },
+  {
+    "id": 184,
+    "soal": "Salah satu bunga nasional indonesia memiliki julukan sebagai puspa bangsa?",
+    "jawaban": "Melati"
+  },
+  {
+    "id": 185,
+    "soal": "Alat musik dawai yang dimainkan dengan cara dipetik, berasal dari Rote, NTT?",
+    "jawaban": "Sasando"
+  },
+  {
+    "id": 186,
+    "soal": "Batu yang menggantungkan dan meneteskan air dari langit-langit gua kapur?",
+    "jawaban": "Stalaktit"
+  },
+  {
+    "id": 187,
+    "soal": "Ikon negara singapura berupa patung berkepala singa dengan berbadan ikan?",
+    "jawaban": "Merlion"
+  },
+  {
+    "id": 188,
+    "soal": "Istilah dalam catur ketika posisi raja tidak bisa lepas dari pergerakan lawan?",
+    "jawaban": "Sekakmat"
+  },
+  {
+    "id": 189,
+    "soal": "Alat untuk mengukur tekanan udara, digunakan dalam peramalan cuaca?",
+    "jawaban": "Barometer"
+  },
+  {
+    "id": 190,
+    "soal": "Presiden amerika ke 32 satu-satunya yang terpilih sebanyak 4 kali?",
+    "jawaban": "Roosevelt"
+  },
+  {
+    "id": 191,
+    "soal": "Jenis rumah arsitektur tradisional Jawa terbangun dari empat tiang utama?",
+    "jawaban": "Limasan"
+  },
+  {
+    "id": 192,
+    "soal": "Istilah bahasa Jepang untuk karakter gambar yang digunakan dalam pesan elektronik?",
+    "jawaban": "Emoji"
+  },
+  {
+    "id": 193,
+    "soal": "Salah satu senjata belati khas Nusantara yang seringkali bilahnya berkelok-kelok?",
+    "jawaban": "Keris"
+  },
+  {
+    "id": 194,
+    "soal": "Penduduk asli benua Australia yang berciri kulit gelap dan rambut keriting?",
+    "jawaban": "Aborigin"
+  },
+  {
+    "id": 195,
+    "soal": "Tarian khas suku gayo dari aceh, ditampilkan untuk merayakan peristiwa penting?",
+    "jawaban": "Tari saman"
+  },
+  {
+    "id": 196,
+    "soal": "Bentuk muda serangga atau amfibia yang perkembangannya melalui metamorfosis?",
+    "jawaban": "Larva"
+  },
+  {
+    "id": 197,
+    "soal": "Tempat kapal ditambatkan di pelabuhan untuk kegiatan bongkar muat barang?",
+    "jawaban": "Dermaga"
+  },
+  {
+    "id": 198,
+    "soal": "Jenis jam tangan yang digerakkan oleh mesin bertenaga listrik atau baterai?",
+    "jawaban": "Quartz"
+  },
+  {
+    "id": 199,
+    "soal": "Suku penganut Agama Hindu yang tinggal di sekitar pegunungan Bromo dan Semeru?",
+    "jawaban": "Tengger"
+  },
+  {
+    "id": 200,
+    "soal": "Mainan yang bisa berputar padaporos dan berkesetimbangan pada suatu titik?",
+    "jawaban": "Gasing"
+  },
+  {
+    "id": 201,
+    "soal": "Tanaman polong-polongan yang merupakan sumber utama protein nabati dunia?",
+    "jawaban": "Kedelai"
+  },
+  {
+    "id": 202,
+    "soal": "Cairan tidak berwarna, tidak berbau, digunakan sebagai senjata kimia pemusnah massal?",
+    "jawaban": "Sarin"
+  },
+  {
+    "id": 203,
+    "soal": "Cabang ilmu kedokteran gigi yang khusus mempelajari ilmu merapikan gigi?",
+    "jawaban": "Ortodonti"
+  },
+  {
+    "id": 204,
+    "soal": "Sstilah yang berasal dari Bahasa Italia, artinya penari baletperempuan?",
+    "jawaban": "Balerina"
+  },
+  {
+    "id": 205,
+    "soal": "Sawah berundak di Bali yang diakui UNESCO sebagai Warisan Budaya Dunia?",
+    "jawaban": "Jatiluwih"
+  },
+  {
+    "id": 206,
+    "soal": "Makanan pokok pengganti nasi yang dibuat dari ketela pohon atau singkong?",
+    "jawaban": "Tiwul"
+  },
+  {
+    "id": 207,
+    "soal": "Bagian mata yang mengubah cahaya menjadi sinyal saraf?",
+    "jawaban": "Retina"
+  },
+  {
+    "id": 208,
+    "soal": "Nama mesin penyandi yang digunakan Jerman nazi pada Perang Dunia II?",
+    "jawaban": "Enigma"
+  },
+  {
+    "id": 209,
+    "soal": "Kosmetika yang terbuat dari lilin, pigmen, minyak, diaplikasikan pada bibir?",
+    "jawaban": "Lipstik"
+  },
+  {
+    "id": 210,
+    "soal": "Bumbu makanan yang terbuat dari fermentasi kedelai, terigu, dan garam?",
+    "jawaban": "Tauco"
+  },
+  {
+    "id": 211,
+    "soal": "Hewan renik yang dapat menurunkan produktivitas hewan yang diumpanginya?",
+    "jawaban": "Parasit"
+  },
+  {
+    "id": 212,
+    "soal": "Cairan manis yang diproduksi bunga untuk menarik kedatangan hewan penyerbuk?",
+    "jawaban": "Nektar"
+  },
+  {
+    "id": 213,
+    "soal": "Proses pembuatan daratan baru dari dasar laut atau dasar sungai?",
+    "jawaban": "Reklamasi"
+  },
+  {
+    "id": 214,
+    "soal": "Istilah untuk keadaan niat sebelum melaksanakan ibadah Haji atau Umroh?",
+    "jawaban": "Ihram"
+  },
+  {
+    "id": 215,
+    "soal": "Alat musik senar khas suku Banjar, dimainkan dengan cara dipetik?",
+    "jawaban": "Panting"
+  },
+  {
+    "id": 216,
+    "soal": "Penyakit virus mematikan yang mewabah di Afrika Barat tahun 2014?",
+    "jawaban": "Ebola"
+  },
+  {
+    "id": 217,
+    "soal": "Jenis musang yang dikenal suka menyantap biji kopi secara utuh?",
+    "jawaban": "Luwak"
+  },
+  {
+    "id": 218,
+    "soal": "Nama pedang yang dimiliki raja Arthur menurut mitologi Britania Raya?",
+    "jawaban": "Excalibur"
+  },
+  {
+    "id": 219,
+    "soal": "Negara yang memiliki bendera merah putih persis seperti Indonesia?",
+    "jawaban": "Monako"
+  },
+  {
+    "id": 220,
+    "soal": "Suatu pertunjukan teater yang menggunakan isyarat gerak tubuh tanpa suara?",
+    "jawaban": "Pantomim"
+  },
+  {
+    "id": 221,
+    "soal": "Tradisi pernikahan calon mempelai wanita tidak diperkenankan keluar rumah?",
+    "jawaban": "Pingitan"
+  },
+  {
+    "id": 222,
+    "soal": "Tipe hewan yang beraktivitas pada malam hari dan tidur pada siang hari?",
+    "jawaban": "Nokturnal"
+  },
+  {
+    "id": 223,
+    "soal": "Kelainan bawaan tidak adanya pigmen melanin pada mata, kulit, rambut?",
+    "jawaban": "Albinisme"
+  },
+  {
+    "id": 224,
+    "soal": "Cabang ilmu linguistik yang mempelajari asal usul kata?",
+    "jawaban": "Etimologi"
+  },
+  {
+    "id": 225,
+    "soal": "Jenis ikan yang dapat melompat kedaratan, terdapat di Pulau Kalimantan?",
+    "jawaban": "Tembakul"
+  },
+  {
+    "id": 226,
+    "soal": "Mata uang elektronik dengan teknologi blockchain yang diciptakan pada tahun 2009?",
+    "jawaban": "Bitcoin"
+  },
+  {
+    "id": 227,
+    "soal": "Pengusaha rokok terbesar tahun 1918 pemilik pabrik kretek tjap bal tiga?",
+    "jawaban": "Nitisemito"
+  },
+  {
+    "id": 228,
+    "soal": "Pelukis ekspresionis ini dikenal sebagai maestro seni lukis Indonesia?",
+    "jawaban": "Affandi"
+  },
+  {
+    "id": 229,
+    "soal": "Aku adalah sebuah kerajinan tangan. Aku memiliki bentuk seperti wajah manusia.",
+    "jawaban": "Topeng"
+  },
+  {
+    "id": 230,
+    "soal": "Aku menggunakan seragam coklat. Aku bertugas mengayomi masyarakat.",
+    "jawaban": "Polisi"
+  },
+  {
+    "id": 231,
+    "soal": "Aku sangat sepi pada malam hari. Aku selalu didatangi orang pada hari tertentu. Aku adalah sebuah tempat untuk beristirahat yang panjang.",
+    "jawaban": "Kuburan"
+  },
+  {
+    "id": 232,
+    "soal": "Aku disukai anak-anak untuk sarapan. Aku sering ada di dalam roti. Kebanyakan rasa aku adalah stroberi atau nanas.",
+    "jawaban": "Selai"
+  },
+  {
+    "id": 233,
+    "soal": "Aku tidak terlihat. Hanya orang-orang tertentu yang dapat melihat saya. Aku juga sangat menarik untuk diperbincangkan.",
+    "jawaban": "Hantu"
+  },
+  {
+    "id": 234,
+    "soal": "Aku berada di dalam tubuh manusia. Aku keluar jika ada yang terluka. Aku berwarna merah.",
+    "jawaban": "Darah"
+  },
+  {
+    "id": 235,
+    "soal": "Aku sejenis binatang. Semua bagian tubuh aku ada di kepala. Aku bisa menyebabkan gatal.",
+    "jawaban": "Kutu"
+  },
+  {
+    "id": 236,
+    "soal": "Tubuh aku panjang, tapi aku bukan ular. Aku bisa mengikat apa saja.",
+    "jawaban": "Tali"
+  },
+  {
+    "id": 237,
+    "soal": "Aku tumbuh di daerah pegunungan. Aku sejenis sayuran. Aku berwarna hijau dan bisa juga ungu. Aku memiliki bentuk yang bulat.",
+    "jawaban": "Kubis"
+  },
+  {
+    "id": 238,
+    "soal": "Aku dipakai di kepala. Tidak sembarangan orang bisa memakainya. Aku terbuat dari emas dengan batu mulia di sekelilingnya.",
+    "jawaban": "Mahkota"
+  },
+  {
+    "id": 239,
+    "soal": "Aku terbuat dari kain. Bentuk aku bermacam-macam, aku untuk menutupi jendela.",
+    "jawaban": "Tirai"
+  },
+  {
+    "id": 240,
+    "soal": "Bentukku bisa padat atau cair. Jika digosok aku akan berbuih. Aku ada di kamar mandi.",
+    "jawaban": "Sabun"
+  },
+  {
+    "id": 241,
+    "soal": "Tubuhku keras dan panjang. Rasaku manis, tapi aku bukan gula.",
+    "jawaban": "Tebu"
+  },
+  {
+    "id": 242,
+    "soal": "Aku memiliki cahaya. Cahaya aku dapat menyehatkan. Apabila aku datang biasanya banyak orang yang ke pantai.",
+    "jawaban": "Sore"
+  },
+  {
+    "id": 243,
+    "soal": "Tubuhku dari besi. Gigiku tajam dan banyak. Aku suka memotong.",
+    "jawaban": "Gergaji"
+  },
+  {
+    "id": 244,
+    "soal": "Kalau demam, aku sering dikompres air hangat. Kalau berpikir keras, aku sering dipegang. Kalau lupa, aku sering ditepuk.",
+    "jawaban": "Dahi"
+  },
+  {
+    "id": 245,
+    "soal": "Aku suka memainkan peran. Sering muncul di panggung televisi dan film. Aku juga terkenal. Aku berjenis kelamin pria.",
+    "jawaban": "Aktor"
+  },
+  {
+    "id": 246,
+    "soal": "Aku bisa menyalakan lampu. Tentu saja aku bisa mematikan lampu. Tapi tanpa listrik aku tidak ada gunanya.",
+    "jawaban": "Saklar"
+  },
+  {
+    "id": 247,
+    "soal": "Aku lahir di Arab. Aku tinggal dan besar pun di Arab. Tapi aku sama sekali tidak bisa Bahasa Arab.",
+    "jawaban": "Unta"
+  },
+  {
+    "id": 248,
+    "soal": "Badanku kecil panjang. Rambutku cuma satu. Aku muncul saat gelap gulita.",
+    "jawaban": "Lilin"
+  },
+  {
+    "id": 249,
+    "soal": "Aku laksana semut beriring, hanya pada laki-laki saja. Munculnya pun di bagian tertentu saja.",
+    "jawaban": "Kumis"
+  },
+  {
+    "id": 250,
+    "soal": "Aku digunakan saat memasak. Tubuhku dapat melukai. Aku sangat tajam. Aku terbuat dari stainless.",
+    "jawaban": "Pisau"
+  },
+  {
+    "id": 251,
+    "soal": "Aku adalah kotak yang dapat berbicara dan dapat menghibur orang. Aku juga penuh warna.",
+    "jawaban": "Televisi"
+  },
+  {
+    "id": 252,
+    "soal": "Pagi, siang, sore, dan malam aku bekerja tanpa henti dan terus berputar-putar, bila tidak matilah aku.",
+    "jawaban": "Jam"
+  },
+  {
+    "id": 253,
+    "soal": "Aku sembunyi tapi kepalaku selalu kelihatan.",
+    "jawaban": "Paku"
+  },
+  {
+    "id": 254,
+    "soal": "Aku hidup dengan listrik. Bagian bawahku sangat panas. Bagian bawahku dari logam. Kegunaanku untuk merapikan baju.",
+    "jawaban": "Setrika"
+  },
+  {
+    "id": 255,
+    "soal": "Aku adalah buah. Kalau masak warnaku kuning. Aku berbentuk lonjong. Aku untuk pencuci mulut.",
+    "jawaban": "Pisang"
+  },
+  {
+    "id": 256,
+    "soal": "Aku untuk membawa barang. Aku berwarna-warni. Aku dibawa ke sekolah. Aku biasanya di punggung.",
+    "jawaban": "Tas"
+  },
+  {
+    "id": 257,
+    "soal": "Aku sangat panas. Aku bisa melenyapkan sesuatu. Aku akan besar dengan angin. Aku takut dengan air.",
+    "jawaban": "Api"
+  },
+  {
+    "id": 258,
+    "soal": "Tebak siapakah aku? Aku terbuat dari kayu. Aku punya 4 kaki. Aku bisa patah. Aku digunakan untuk duduk.",
+    "jawaban": "Kursi"
+  },
+  {
+    "id": 259,
+    "soal": "Aku adalah hewan. Aku punya 4 kaki. Aku pemakan rumput. Aku berwarna putih.",
+    "jawaban": "Sapi"
+  },
+  {
+    "id": 260,
+    "soal": "Walaupun dibeli dalam waktu yang berbeda-beda, habisnya selalu dalam waktu bersamaan.",
+    "jawaban": "Kalender"
+  },
+  {
+    "id": 261,
+    "soal": "Aku bercahaya. Kadang aku berwarna-warni. Aku hidup dengan listrik. Aku bermanfaat di kegelapan.",
+    "jawaban": "Lampu"
+  },
+  {
+    "id": 262,
+    "soal": "Aku berwujud cair. Aku berwarna bening. Aku sangat dibutuhkan untuk hidup.",
+    "jawaban": "Air"
+  },
+  {
+    "id": 263,
+    "soal": "Aku adalah hewan. Aku mempunyai tanduk. Aku pemakan rumput. Kadang aku dijadikan sate.",
+    "jawaban": "Kambing"
+  },
+  {
+    "id": 264,
+    "soal": "Aku digunakan saat tidur. Aku sangat lembut. Aku lebar dan panjang. Aku selalu menghangatkan.",
+    "jawaban": "Selimut"
+  },
+  {
+    "id": 265,
+    "soal": "Aku termasuk hewan melata. Aku pemakan daging. Gigitanku mengandung racun. Aku tidak mempunyai kaki.",
+    "jawaban": "Ular"
+  },
+  {
+    "id": 266,
+    "soal": "Aku musuhnya air. Kadang aku untuk memasak. Aku berwujud cair. Aku sangat licin.",
+    "jawaban": "Minyak"
+  },
+  {
+    "id": 267,
+    "soal": "Aku terbuat dari kapas. Aku digunakan untuk tidur. Aku sangat empuk. Bentukku persegi panjang.",
+    "jawaban": "Bantal"
+  },
+  {
+    "id": 268,
+    "soal": "Aku sangat empuk. Aku bermacam-macam motif. Aku berada di ruang tamu. Biasanya aku untuk duduk.",
+    "jawaban": "Sofa"
+  },
+  {
+    "id": 269,
+    "soal": "Aku terbuat dari kayu. Aku berbentuk kotak. Aku ada pintunya. Kadang aku ada kacanya.",
+    "jawaban": "Lemari"
+  },
+  {
+    "id": 270,
+    "soal": "Aku sangat lembut. Aku berwarna putih. Bentukku persegi panjang. Biasanya aku untuk mengusap sesuatu yang kotor.",
+    "jawaban": "Tisu"
+  },
+  {
+    "id": 271,
+    "soal": "Aku merah, aku biru, akupun hijau. Aku juga sering kau kunjungi.",
+    "jawaban": "Google"
+  },
+  {
+    "id": 272,
+    "soal": "Kau cekik leherku. Kau gerayangi tubuhku. Akupun tertawa.",
+    "jawaban": "Gitar"
+  },
+  {
+    "id": 273,
+    "soal": "Aku berbentuk bundar. Biasanya berwarna putih. Bila jatuh, aku bisa pecah. Aku dipakai saat makan.",
+    "jawaban": "Piring"
+  },
+  {
+    "id": 274,
+    "soal": "Aku adalah ruangan. Di ruanganku ada kompornya. Aku tempat untuk memasak.",
+    "jawaban": "Dapur"
+  },
+  {
+    "id": 275,
+    "soal": "Aku sebuah profesi. Aku biasanya di rumah sakit. Aku memeriksa orang sakit.",
+    "jawaban": "Dokter"
+  },
+  {
+    "id": 276,
+    "soal": "Aku sangat lucu. Aku adalah mainan. Aku dimainkan oleh anak-anak. Biasanya aku berbentuk tiruan hewan, manusia, dll.",
+    "jawaban": "Boneka"
+  },
+  {
+    "id": 277,
+    "soal": "Aku berbentuk bulat. Aku sangat enak. Biasanya aku untuk lauk. Aku ada kuningnya di tengah.",
+    "jawaban": "Telur"
+  },
+  {
+    "id": 278,
+    "soal": "Aku termasuk itik. Aku menghasilkan telur. Telurku berwarna biru.",
+    "jawaban": "Bebek"
+  },
+  {
+    "id": 279,
+    "soal": "Aku bagian dari tubuh. Aku ada 2 kiri dan kanan. Aku merupakan panca indra.",
+    "jawaban": "Telinga"
+  },
+  {
+    "id": 280,
+    "soal": "Aku sangat mengkilap. Aku berwarna kuning. Kadang aku berbentuk cincin.",
+    "jawaban": "Emas"
+  },
+  {
+    "id": 281,
+    "soal": "Aku adalah hewan. Aku bisa menarik gerobak. Biasanya aku digunakan untuk delman.",
+    "jawaban": "Kuda"
+  },
+  {
+    "id": 282,
+    "soal": "Aku sebuah pulau. Aku termasuk wilayah WITA. Banyak wisatawan asing di sini.",
+    "jawaban": "Bali"
+  },
+  {
+    "id": 283,
+    "soal": "Aku adalah satelit alami bumi. Aku berbentuk bulat. Aku menyinari di malam hari.",
+    "jawaban": "Bulan"
+  },
+  {
+    "id": 284,
+    "soal": "Aku adalah alat tulis. Aku selalu dipegang ibu jari dan telunjuk. Aku untuk menulis buku.",
+    "jawaban": "Pensil"
+  },
+  {
+    "id": 285,
+    "soal": "Aku berwujud kain. Aku selalu dipakai manusia. Aku terdapat 3 lubang.",
+    "jawaban": "Celana"
+  },
+  {
+    "id": 286,
+    "soal": "Aku berupa cair. Aku tempat hidup ikan paus. Kapal pesiar selalu di atasku",
+    "jawaban": "Laut"
+  },
+  {
+    "id": 287,
+    "soal": "Aku berwarna putih. Aku berbentuk butir kecil. Aku rasanya asin.",
+    "jawaban": "Garam"
+  },
+  {
+    "id": 288,
+    "soal": "Aku berwujud cair. Aku salah satu bahan bakar. Aku tersedia di POM.",
+    "jawaban": "Pertamax"
+  },
+  {
+    "id": 289,
+    "soal": "Aku adalah sebuah tempat. Aku penghubung antar kota. Aku tempat pemberhentian kereta api.",
+    "jawaban": "Stasiun"
+  },
+  {
+    "id": 290,
+    "soal": "Aku termasuk benda padat. Tubuhku sangat keras. Aku sering digunakan untuk pondasi rumah.",
+    "jawaban": "Batu"
+  },
+  {
+    "id": 291,
+    "soal": "Aku berbentuk bulat. Aku sangat panas. Aku sebagai pusat tata surya.",
+    "jawaban": "Matahari"
+  },
+  {
+    "id": 292,
+    "soal": "Aku pasti sepasang. Aku sangat keras. Tidak semua hewan mempunyai aku. Aku di atas kepala.",
+    "jawaban": "Tanduk"
+  },
+  {
+    "id": 293,
+    "soal": "Aku digunakan untuk minum. Aku berbentuk tabung tanpa tutup. Aku bermacam-macam. Aku terbuat dari atom plastik.",
+    "jawaban": "Cangkir"
+  },
+  {
+    "id": 294,
+    "soal": "Aku berbentuk bundar. Aku tempatnya di atas kepala. Kegunaanku untuk menutupi dari panas.",
+    "jawaban": "Topi"
+  },
+  {
+    "id": 295,
+    "soal": "Semua orang hormat padaku. Setiap negara pasti punya aku. Aku terbuat dari kain.",
+    "jawaban": "Bendera"
+  },
+  {
+    "id": 296,
+    "soal": "Aku sebuah profesi. Aku yang mengurusi sawah.",
+    "jawaban": "Petani"
+  },
+  {
+    "id": 297,
+    "soal": "Aku hidup dengan solar. Aku beroda 4. Aku berbentuk badan besar.",
+    "jawaban": "Truck"
+  },
+  {
+    "id": 298,
+    "soal": "Aku berbentuk kotak. Aku berwarna merah. Aku biasanya untuk membangun rumah.",
+    "jawaban": "Bata"
+  },
+  {
+    "id": 299,
+    "soal": "Tubuhku panjang. Aku selalu diinjak. Aku terbentang di sungai.",
+    "jawaban": "Jembatan"
+  },
+  {
+    "id": 300,
+    "soal": "Aku adalah alat bersih-bersih. Badanku terbuat dari kayu. Aku sering bersentuhan dengan lantai.",
+    "jawaban": "Sapu"
+  },
+  {
+    "id": 301,
+    "soal": "Aku berbentuk tabung. Badanku terdiri dari 2 lapis. Biasanya aku digunakan untuk menyimpan air panas.",
+    "jawaban": "Termos"
+  },
+  {
+    "id": 302,
+    "soal": "Tebak siapakah aku? Aku terbuat dari kain. Aku berbentuk persegi. Biasanya aku untuk mengelap meja.",
+    "jawaban": "Serbet"
+  },
+  {
+    "id": 303,
+    "soal": "Aku akan hidup dengan listrik. Aku banyak di kantor. Biasanya di dalamku ada MS Officenya.",
+    "jawaban": "Komputer"
+  },
+  {
+    "id": 304,
+    "soal": "Aku berbentuk kotak. Aku biasanya di dapur. Aku bisa mengeluarkan api.",
+    "jawaban": "Kompor"
+  },
+  {
+    "id": 305,
+    "soal": "Aku adalah benda elektronik. Bentukku kotak. Aku bisa mengeluarkan suara.",
+    "jawaban": "Radio"
+  },
+  {
+    "id": 306,
+    "soal": "Aku sangat wangi. Aku dipakai di saat mandi. Aku diusap di rambut.",
+    "jawaban": "Sampo"
+  },
+  {
+    "id": 307,
+    "soal": "Aku adalah sebuah ruangan. Biasanya aku di samping rumah. Aku merupakan tempat mobil.",
+    "jawaban": "Garasi"
+  },
+  {
+    "id": 308,
+    "soal": "Aku adalah ruang bebas. Biasanya aku di depan rumah. Banyak macam-macam bunga di sini.",
+    "jawaban": "Taman"
+  },
+  {
+    "id": 309,
+    "soal": "Aku bagian dari hewan. Biasanya bentukku panjang. Aku selalu di bagian belakang hewan.",
+    "jawaban": "Ekor"
+  },
+  {
+    "id": 310,
+    "soal": "Aku termasuk burung. Ada yang menjadikanku sebagai simbol negara.",
+    "jawaban": "Garuda"
+  },
+  {
+    "id": 311,
+    "soal": "Aku termasuk sebuah profesi. Biasanya aku dipilih lewat pemilu. Aku merupakan orang no. 1 di sebuah provinsi.",
+    "jawaban": "Gubernur"
+  },
+  {
+    "id": 312,
+    "soal": "Aku adalah sebuah tempat. Aku sangat dingin. Aku ada yang Utara dan Selatan.",
+    "jawaban": "Kutub"
+  },
+  {
+    "id": 313,
+    "soal": "Aku adalah sebuah kota. Aku berada di Jawa Barat. Aku dijuluki Kota Hujan.",
+    "jawaban": "Bogor"
+  },
+  {
+    "id": 314,
+    "soal": "Aku berwujud cair. Aku berwarna hitam. Aku sangat bau. Aku kotoran dari pabrik.",
+    "jawaban": "Limbah"
+  },
+  {
+    "id": 315,
+    "soal": "Aku adalah macam olahraga. Aku dimainkan dengan bola. Aku ada 2 ring di masing-masing ujung lawan.",
+    "jawaban": "Basket"
+  },
+  {
+    "id": 316,
+    "soal": "Aku terbuat dari parasit. Aku ada pegangannya. Aku digunakan untuk berlindung dari panas dan hujan.",
+    "jawaban": "Payung"
+  },
+  {
+    "id": 317,
+    "soal": "Aku bagian dari tubuh. Warnaku putih. Salah satu dari aku disebut geraham.",
+    "jawaban": "Gigi"
+  },
+  {
+    "id": 318,
+    "soal": "Aku di atas meja. Biasanya terbuat dari kayu. Aku sebagai tempat puntung rokok.",
+    "jawaban": "Asbak"
+  },
+  {
+    "id": 319,
+    "soal": "Aku merupakan karya seni. Orang suka memajangku. Aku mempunyai estetika.",
+    "jawaban": "Lukisan"
+  },
+  {
+    "id": 320,
+    "soal": "Aku terbuat dari alumunium. Aku sebagai tempat baju. Aku selalu ditaruh di terik matahari.",
+    "jawaban": "Jemuran"
+  },
+  {
+    "id": 321,
+    "soal": "Aku berbentuk kotak. Bagian dalamku dingin. Aku membuat es.",
+    "jawaban": "Kulkas"
+  },
+  {
+    "id": 322,
+    "soal": "Aku bisa pecah. Setiap hari orang pasti memandangku. Aku bisa memantulkan sesuatu yang ada di hadapanku.",
+    "jawaban": "Cermin"
+  },
+  {
+    "id": 323,
+    "soal": "Aku dipunyai di setiap rumah. Aku tempat BAB.",
+    "jawaban": "Toilet"
+  },
+  {
+    "id": 324,
+    "soal": "Aku gelembung-gelembung kecil. Aku dihasilkan oleh sabun.",
+    "jawaban": "Busa"
+  },
+  {
+    "id": 325,
+    "soal": "Aku hidup dengan listrik. Aku berbentuk kotak. Kegunaanku untuk membuat roti.",
+    "jawaban": "Oven"
+  },
+  {
+    "id": 326,
+    "soal": "Aku adalah alat dapur. Aku berbentuk bulat. Aku digunakan untuk menumbuk bumbu.",
+    "jawaban": "Cobek"
+  },
+  {
+    "id": 327,
+    "soal": "Aku panjang seperti pipa. Badanku lentur. Kegunaanku untuk mengalirkan air.",
+    "jawaban": "Selang"
+  },
+  {
+    "id": 328,
+    "soal": "Saat aku jatuh, gerakku pelan. Saat aku naik, gerakku cepat.",
+    "jawaban": "Ingus"
+  },
+  {
+    "id": 329,
+    "soal": "Aku merah putih yang berselang. Tegap berdiri dan saling berhubungan. Mendekatkan yang jauh dan menjauhkan yang dekat.",
+    "jawaban": "Tower"
+  },
+  {
+    "id": 330,
+    "soal": "Jika kau sebut aku. Aku akan tidak berarti.",
+    "jawaban": "Diam"
+  },
+  {
+    "id": 331,
+    "soal": "Kau genggam aku. Terkadang kau tak mau jauh dariku. Di saat kamu pergi, aku menyertaimu. Dunia tampak sepi tanpa kehadiranku. Saat aku berteriak, kau langsung mencariku.",
+    "jawaban": "Handphone"
+  },
+  {
+    "id": 332,
+    "soal": "Aku bisa makan. Aku juga bisa dimakan. Aku hitam putih yang berperang.",
+    "jawaban": "Catur"
+  },
+  {
+    "id": 333,
+    "soal": "Aku selalu dikejar-kejar. Tapi walau sampai kapanpun, dia tidak akan pernah berhasil mendahuluiku.",
+    "jawaban": "Roda"
+  },
+  {
+    "id": 334,
+    "soal": "Aku selalu berpasangan. Aku kiri dan kanan. Aku dipake ke sekolah. Kadang aku tak bertali.",
+    "jawaban": "Sepatu"
+  },
+  {
+    "id": 335,
+    "soal": "Aku Bapak Proklamator Republik Indonesia.",
+    "jawaban": "Soekarno"
+  },
+  {
+    "id": 336,
+    "soal": "Aku adalah bagian pada kendaraan bermotor. Aku digunakan sebagai pembuangan gas.",
+    "jawaban": "Knalpot"
+  },
+  {
+    "id": 337,
+    "soal": "Aku adalah binatang. Aku bisa hidup di air dan di darat.",
+    "jawaban": "Amfibi"
+  },
+  {
+    "id": 338,
+    "soal": "Aku sebuah negara, aku juara Piala Eropa 2016.",
+    "jawaban": "Portugal"
+  },
+  {
+    "id": 339,
+    "soal": "Aku adalah mata uang, aku berasal dari negara Jepang.",
+    "jawaban": "Yen"
+  },
+  {
+    "id": 340,
+    "soal": "Aku salah satu panca indra manusia. Aku digunakan untuk mengecap.",
+    "jawaban": "Lidah"
+  },
+  {
+    "id": 341,
+    "soal": "Aku adalah sebuah planet. Aku terbesar dalam tata surya kita.",
+    "jawaban": "Yupiter"
+  },
+  {
+    "id": 342,
+    "soal": "Aku sebuah produk makanan ringan. Aku pernah beriklan di televisi. Aku memiliki moto: ‘Berapa Lapis? Ratusan’.",
+    "jawaban": "Tango"
+  },
+  {
+    "id": 343,
+    "soal": "Aku sejenis hewan. Aku hewan terkecil di dunia.",
+    "jawaban": "Amuba"
+  },
+  {
+    "id": 344,
+    "soal": "Aku adalah tumbuhan. Di seluruh tubuhku penuh dengan duri. Aku sering ditemukan di padang gurun yang gersang.",
+    "jawaban": "Kaktus"
+  },
+  {
+    "id": 345,
+    "soal": "Aku adalah nama gunung. Aku gunung tertinggi di dunia.",
+    "jawaban": "Everest"
+  },
+  {
+    "id": 346,
+    "soal": "Aku suka mempromosikan. Bisa seperti benda, jasa, dan ide. Aku juga bisa meningkatkan penjualan.",
+    "jawaban": "Iklan"
+  },
+  {
+    "id": 347,
+    "soal": "Kalo diucapkan 1 kali aku jauh. Diucapkan 2 kali aku jadi dekat.",
+    "jawaban": "Langit"
+  },
+  {
+    "id": 348,
+    "soal": "Saya adalah sebuah provinsi di Indonesia. Saya disusun oleh sebuah benda yang dicari ketika gelap. Jika huruf awal saya diganti, maka pekerjaan saya telah selesai.",
+    "jawaban": "Lampung"
+  },
+  {
+    "id": 349,
+    "soal": "Aku memiliki ukuran besar. Pada beberapa film, aku juga sesosok yang menyeramkan.",
+    "jawaban": "Raksasa"
+  },
+  {
+    "id": 350,
+    "soal": "Aku sebuah negara. Aku memiliki jumlah penduduk terbanyak di dunia.",
+    "jawaban": "China"
+  },
+  {
+    "id": 351,
+    "soal": "Aku adalah sebuah bangunan. Aku berbentuk segitiga. Aku digunakan sebagai tempat penguburan Firaun.",
+    "jawaban": "Piramida"
+  },
+  {
+    "id": 352,
+    "soal": "Aku sejenis kera. Aku adalah binatang yang dilindungi. Aku berasal dari Kalimantan dan Sumatra.",
+    "jawaban": "Orangutan"
+  },
+  {
+    "id": 353,
+    "soal": "Aku adalah sejenis buah-buahan, biasanya aku diparut untuk dijadikan santan.",
+    "jawaban": "Kelapa"
+  },
+  {
+    "id": 354,
+    "soal": "Aku adalah samudra. Aku samudra terluas di dunia.",
+    "jawaban": "Pasifik"
+  },
+  {
+    "id": 355,
+    "soal": "Aku salah satu bagian dari anggota tubuh. Tempatku di bagian wajah.",
+    "jawaban": "Hidung"
+  },
+  {
+    "id": 356,
+    "soal": "Aku adalah sebuah planet. Aku sangat jauh dari bumi. Aku planet keenam dari matahari.",
+    "jawaban": "Saturnus"
+  },
+  {
+    "id": 357,
+    "soal": "Aku adalah sebuah mata uang. Aku biasa dipake untuk melakukan pembayaran. Aku adalah mata uang virtual.",
+    "jawaban": "Bitcoin"
+  },
+  {
+    "id": 358,
+    "soal": "Aku terbuat dari kain. Aku dapat menyerap air. Aku digunakan untuk mengeringkan setelah mandi.",
+    "jawaban": "Handuk"
+  },
+  {
+    "id": 359,
+    "soal": "Ukuranku sangat kecil seperti butiran pasir. Rasaku sangat manis. Aku terbuat dari tanaman tebu.",
+    "jawaban": "Gula"
+  },
+  {
+    "id": 360,
+    "soal": "Aku merupakan makanan pokok. Aku berbentuk butiran kecil. Warnaku putih.",
+    "jawaban": "Nasi"
+  },
+  {
+    "id": 361,
+    "soal": "Aku adalah sebuah kota. Aku bagian dari Negara Kesatuan Republik Indonesia, letakku paling Utara Indonesia.",
+    "jawaban": "Sabang"
+  },
+  {
+    "id": 362,
+    "soal": "Aku bagian dari tubuh. Aku adalah sebutan untuk ibu jari tangan dan kaki.",
+    "jawaban": "Jempol"
+  },
+  {
+    "id": 363,
+    "soal": "Aku sejenis alat musik. Aku berasal dari masyarakat Sunda. Aku terbuat dari bambu.",
+    "jawaban": "Angklung"
+  },
+  {
+    "id": 364,
+    "soal": "Aku sejenis kesenian. Aku sangat terkenal. Aku berasal dari Ponorogo.",
+    "jawaban": "Reog"
+  },
+  {
+    "id": 365,
+    "soal": "Aku sejenis makanan. Biasanya aku berupa bubur sagu. Aku berasal dari Maluku dan Papua.",
+    "jawaban": "Papeda"
+  },
+  {
+    "id": 366,
+    "soal": "Aku adalah sebuah seni bela diri. Aku berasal dari Negara Jepang.",
+    "jawaban": "Karate"
+  },
+  {
+    "id": 367,
+    "soal": "Aku adalah sebuah tarian tradisional. Aku berasal dari Tionghoa. Biasanya aku menggunakan kostum menyerupai singa atau naga.",
+    "jawaban": "Barongsai"
+  },
+  {
+    "id": 368,
+    "soal": "Aku adalah sebuah bahasa. Aku merupakan bahasa resmi negara Filipina.",
+    "jawaban": "Tagalog"
+  },
+  {
+    "id": 369,
+    "soal": "Aku merupakan benua yang meliputi kutub Selatan bumi. Aku memiliki suhu yang sangat rendah.",
+    "jawaban": "Antartika"
+  },
+  {
+    "id": 370,
+    "soal": "Aku adalah sebutan untuk kerabat kandung. Aku adalah ayah dari masing-masing orang tua kita.",
+    "jawaban": "Kakek"
+  },
+  {
+    "id": 371,
+    "soal": "Aku makhluk berjenis kelamin perempuan. Aku berparas cantik. Aku berasal dari kahyangan.",
+    "jawaban": "Bidadari"
+  },
+  {
+    "id": 372,
+    "soal": "Aku adalah sejenis bangunan. Aku biasanya dijadikan tempat tinggal manusia.",
+    "jawaban": "Rumah"
+  },
+  {
+    "id": 373,
+    "soal": "Aku berbentuk butiran-butiran kering. Aku merupakan olahan dari padi.",
+    "jawaban": "Beras"
+  },
+  {
+    "id": 374,
+    "soal": "Aku tidak bisa jalan di darat. Apalagi di laut. Aku suka menembus awan. Aku bisa membawa banyak orang.",
+    "jawaban": "Pesawat"
+  },
+  {
+    "id": 375,
+    "soal": "Letak aku selalu di pojok. Aku ada pada segitiga siku-siku. Aku juga selalu ada di rumah.",
+    "jawaban": "Sudut"
+  },
+  {
+    "id": 376,
+    "soal": "Tubuh aku penuh duri. Orang lebih suka aku jika berwarna merah. Aku melambangkan perasaan cinta.",
+    "jawaban": "Mawar"
+  },
+  {
+    "id": 377,
+    "soal": "Aku adalah alat tulis. Aku berwarna putih. Aku berbentuk segi panjang. Aku hancur bila kena air.",
+    "jawaban": "Buku"
+  },
+  {
+    "id": 378,
+    "soal": "Tubuhku kebanyakan dibuat dari besi. Aku selalu memotong. Kalau separuh tubuhku hilang, maka aku tidak berguna lagi.",
+    "jawaban": "Gunting"
+  },
+  {
+    "id": 379,
+    "soal": "Tubuhku kecil mungil. Kalau sudah dibuka akan terlihat ujungku yang bulat lucu. Aku suka sekali diisap terutama anak-anak.",
+    "jawaban": "Lolipop"
+  },
+  {
+    "id": 380,
+    "soal": "Tebak siapakah aku? Aku adalah hewan. Aku bisa terbang. Aku sangat indah. Aku penghisap bunga.",
+    "jawaban": "Kupu"
+  },
+  {
+    "id": 381,
+    "soal": "Bentuk aku kecil hitam. Rasa aku sedikit asin. Aku sering diolah menjadi makanan ringan.",
+    "jawaban": "Kuaci"
+  },
+  {
+    "id": 382,
+    "soal": "Aku bukan benda cair, juga bukan benda padat. Jika aku muncul sekitarku pasti heboh.",
+    "jawaban": "Kentut"
+  },
+  {
+    "id": 383,
+    "soal": "Badanku penuh duri, tapi aku bukan buah. Wanita sangat suka akan diriku.",
+    "jawaban": "Mawar"
+  },
+  {
+    "id": 384,
+    "soal": "Aku terbuat dari besi. Aku digunakan untuk makan. Pasanganku adalah garpu.",
+    "jawaban": "Sendok"
+  },
+  {
+    "id": 385,
+    "soal": "Aku bersuara bila ada bahaya. Aku juga suka membangunkan orang tidur. Suara aku cukup keras.",
+    "jawaban": "Alarm"
+  },
+  {
+    "id": 386,
+    "soal": "Usia aku masih sangat muda. Bentuk aku mungil dan imut. Aku sangat menggemaskan.",
+    "jawaban": "Bayi"
+  },
+  {
+    "id": 387,
+    "soal": "Bentuk aku bulat. Ukuran aku bermacam-macam. Aku selalu digelindingkan, dilempar, bahkan ditendang.",
+    "jawaban": "Bola"
+  },
+  {
+    "id": 388,
+    "soal": "Bentuk aku bermacam-macam. Aku disukai anak-anak. Aku gampang rusak oleh benda tajam atau panas.",
+    "jawaban": "Balon"
+  },
+  {
+    "id": 389,
+    "soal": "Bentuk aku panjang. Warna tubuh aku oranye, katanya kelinci sangat suka aku.",
+    "jawaban": "Wortel"
+  },
+  {
+    "id": 390,
+    "soal": "Aku selalu membantu orang membawa barang. Ukuran aku bermacam-macam. Letak aku di punggung orang yang aku bantu.",
+    "jawaban": "Ransel"
+  },
+  {
+    "id": 391,
+    "soal": "Tubuh aku warna-warni. Aku muncul setelah hujan turun. Bentuk aku melengkung dengan indah.",
+    "jawaban": "Pelangi"
+  },
+  {
+    "id": 392,
+    "soal": "Aku disukai banyak orang. Aku memiliki cahaya yang terang, tapi cuma sekilas. Aku mengabadikan momen yang penting.",
+    "jawaban": "Kamera"
+  },
+  {
+    "id": 393,
+    "soal": "Bentuk aku panjang dan sedikit melengkung. Aku memiliki warna hijau dan kuning. Katanya aku disukai monyet.",
+    "jawaban": "Pisang"
+  },
+  {
+    "id": 394,
+    "soal": "Aku berbentuk gas. Aku ada jika ada air dan api.",
+    "jawaban": "Uap"
+  },
+  {
+    "id": 395,
+    "soal": "Aku dari golongan hewan. Aku sudah hampir punah. Bentuk aku seperti kadal raksasa.",
+    "jawaban": "Komodo"
+  },
+  {
+    "id": 396,
+    "soal": "Aku peninggalan masa lalu. Aku terbuat dari batu yang megah dan besar. Aku terletak dekat Yogyakarta.",
+    "jawaban": "Borobudur"
+  },
+  {
+    "id": 397,
+    "soal": "Tubuh aku mungil. Aku hidup berkelompok. Aku menghasilkan cairan yang manis.",
+    "jawaban": "Lebah"
+  },
+  {
+    "id": 398,
+    "soal": "Banyak orang yang sangat sulit mendefinisikan aku. Aku juga dapat membuat orang menjadi senang dan bahkan sangat sedih.",
+    "jawaban": "Cinta"
+  },
+  {
+    "id": 399,
+    "soal": "Aku sebuah senjata. Tubuh aku besar dan panjang. Aku memiliki peluru yang bulat, besar, dan berat.",
+    "jawaban": "Meriam"
+  },
+  {
+    "id": 400,
+    "soal": "Aku alat transportasi. Roda aku terbuat dari kayu. Aku harus ditarik oleh kuda.",
+    "jawaban": "Andong"
+  },
+  {
+    "id": 401,
+    "soal": "Aku sejenis hewan. Tubuh aku berbulu dan sangat lucu. Manusia sering menjadikan aku temannya.",
+    "jawaban": "Kucing"
+  },
+  {
+    "id": 402,
+    "soal": "Aku memiliki bentuk atas yang memanjang. Bagian bawahku berbentuk lingkaran. Aku dapat menampung air.",
+    "jawaban": "Botol"
+  },
+  {
+    "id": 403,
+    "soal": "Aku adalah buah. Bentukku bulat. Aku hanya ada di padang pasir.",
+    "jawaban": "Kurma"
+  },
+  {
+    "id": 404,
+    "soal": "Aku terbuat dari kayu. Setiap rumah pasti punya aku. Aku bisa dibuka dan ditutup.",
+    "jawaban": "Pintu"
+  },
+  {
+    "id": 405,
+    "soal": "Aku terbuat dari besi. Ada 2 roda di bagian bawahku. Aku bisa digunakan dengan cara dikayuh.",
+    "jawaban": "Sepeda"
+  },
+  {
+    "id": 406,
+    "soal": "Aku terbuat dari kain. Aku selalu dipasang di jendela.",
+    "jawaban": "Gorden"
+  },
+  {
+    "id": 407,
+    "soal": "Aku biasanya terbuat dari besi, kayu, atau tembok. Aku selalu dipasang mengelilingi rumah.",
+    "jawaban": "Pagar"
+  },
+  {
+    "id": 408,
+    "soal": "Aku bagian dari tumbuhan. Aku merupakan bagian dimana terjadi fotosintesis.",
+    "jawaban": "Daun"
+  },
+  {
+    "id": 409,
+    "soal": "Aku berwujud gas. Aku selalu dibutuhkan semua makhluk hidup.",
+    "jawaban": "Oksigen"
+  },
+  {
+    "id": 410,
+    "soal": "Aku berwujud cair, biasanya warnaku hitam. Aku jadi satu dengan printer.",
+    "jawaban": "Tinta"
+  },
+  {
+    "id": 411,
+    "soal": "Aku terbuat dari besi. Aku berbentuk kecil panjang. Selalu ada lubang di salah satu ujungku.",
+    "jawaban": "Jarum"
+  },
+  {
+    "id": 412,
+    "soal": "Aku sangat membantu siswa dalam menghitung. Aku sangat jago dalam menghitung. Di dalam diriku terdapat angka 1-9.",
+    "jawaban": "Kalkulator"
+  },
+  {
+    "id": 413,
+    "soal": "Aku termasuk hewan. Biasanya aku ada di hutan. Di bagian tubuhku penuh duri.",
+    "jawaban": "Landak"
+  },
+  {
+    "id": 414,
+    "soal": "Ketika muda aku tinggi. Ketika tua aku pendek.",
+    "jawaban": "Lilin"
+  },
+  {
+    "id": 415,
+    "soal": "Aku bisa bertambah, tapi aku tidak bisa berkurang.",
+    "jawaban": "Umur"
+  },
+  {
+    "id": 416,
+    "soal": "Aku ringan seperti bulu, namun manusia terkuat tidak bisa menahan aku lebih dari lima menit.",
+    "jawaban": "Nafas"
+  },
+  {
+    "id": 417,
+    "soal": "Aku bisa dipegang tapi tidak bisa disentuh.",
+    "jawaban": "Janji"
+  },
+  {
+    "id": 418,
+    "soal": "Aku bagian dari burung tapi tidak bisa terbang, namun aku bisa berada di lautan tanpa basah.",
+    "jawaban": "Bayangan"
+  },
+  {
+    "id": 419,
+    "soal": "Aku punya banyak lubang tapi aku dapat menyimpan air.",
+    "jawaban": "Sponge"
+  },
+  {
+    "id": 420,
+    "soal": "Aku kehilangan kepala ketika pagi dan punya lagi waktu malam.",
+    "jawaban": "Bantal"
+  },
+  {
+    "id": 421,
+    "soal": "Aku selalu diinjak-injak. Akupun juga dielus-elus.",
+    "jawaban": "Tangga"
+  },
+  {
+    "id": 422,
+    "soal": "Tebak siapakah aku? Aku memiliki sayap. Sayapku menyambung dengan kaki. Aku sangat suka beraktivitas di malam hari.",
+    "jawaban": "Kelelawar"
+  },
+  {
+    "id": 423,
+    "soal": "Aku sejenis hewan. Gigi aku tajam. Aku sangat galak pada orang jahat. Aku dipilih manusia untuk menjaganya.",
+    "jawaban": "Anjing"
+  },
+  {
+    "id": 424,
+    "soal": "Aku selalu dipotong tapi tetap tumbuh. Biasanya aku ada di tangan dan kaki.",
+    "jawaban": "Kuku"
+  },
+  {
+    "id": 425,
+    "soal": "Aku dapat menghibur orang. Aku biasanya ada di tempat karaoke. Aku mempunyai irama dan lirik.",
+    "jawaban": "Lagu"
+  },
+  {
+    "id": 426,
+    "soal": "Aku adalah sesuatu yang sering dinikmati ketika jam-jam istirahat umumnya malam hari. Aku biasanya empuk.",
+    "jawaban": "Kasur"
+  },
+  {
+    "id": 427,
+    "soal": "Aku nomor tiga, tapi bukan angka. Aku akan panas dan dingin pada saat yang sama, tapi tidak pada waktu yang sama. Semua orang dekat denganku, tapi tidak semua orang tahu namaku.",
+    "jawaban": "Bumi"
+  },
+  {
+    "id": 428,
+    "soal": "Aku sejenis buah-buahan. Rupaku bulat, kuning, hijau. Rasanya ada yang manis ada yang asam dan seger diolah saat panas.",
+    "jawaban": "Jeruk"
+  },
+  {
+    "id": 429,
+    "soal": "Aku memiliki bau yang kurang sedap. Badanku penuh dengan duri, namun di dalam tubuhku memiliki daging berwarna kuning yang enak.",
+    "jawaban": "Durian"
+  },
+  {
+    "id": 430,
+    "soal": "Saat aku ditekan, aku menampilkan kata. Saat aku dikombinasikan, aku mengeluarkan hal menarik.",
+    "jawaban": "Keyboard"
+  },
+  {
+    "id": 431,
+    "soal": "Aku memiliki tempat hitam dan putih. Aku memiliki raja dan aku juga memiliki lawan yang saling menyerang.",
+    "jawaban": "Catur"
+  },
+  {
+    "id": 432,
+    "soal": "Aku merupakan benda yang sering digunakan untuk digeser dan diklik.",
+    "jawaban": "Mouse"
+  },
+  {
+    "id": 433,
+    "soal": "Warnaku bermacam-macam, bentukku bermacam-macam pula. Semua orang menyukai aku. Aku identik dengan seorang wanita.",
+    "jawaban": "Bunga"
+  },
+  {
+    "id": 434,
+    "soal": "Warnaku putih, ada juga yang coklat dan cair serta penuh gizi. Aku juga bermanfaat bagi anak-anak dan dewasa.",
+    "jawaban": "Susu"
+  },
+  {
+    "id": 435,
+    "soal": "Aku datang tiba-tiba dan beramai-ramai.",
+    "jawaban": "Hujan"
+  },
+  {
+    "id": 436,
+    "soal": "Aku memiliki badan yang kecil. Aku juga selalu berkelompok dalam jumlah besar. Dalam hal apapun, kami selalu bekerja sama. Makanan yang aku suka berbau manis.",
+    "jawaban": "Semut"
+  },
+  {
+    "id": 437,
+    "soal": "Aku memiliki badan yang bulat. Warnaku hijau, kuning, dan merah ketika aku matang. Aku biasa digunakan untuk bahan masakan atau dimakan langsung.",
+    "jawaban": "Tomat"
+  },
+  {
+    "id": 438,
+    "soal": "Aku hidup di dalam tanah. Namun batangku hidup di luar dan daunku suka di lalapan.",
+    "jawaban": "Singkong"
+  },
+  {
+    "id": 439,
+    "soal": "Bentukku panjang, keriting, direbus, pake bumbu langsung makan.",
+    "jawaban": "Mie"
+  },
+  {
+    "id": 440,
+    "soal": "Aku disimpan di saku, terdapat tempat kartu, uang, tagihan. Aku sering dibawa kemana-mana.",
+    "jawaban": "Dompet"
+  },
+  {
+    "id": 441,
+    "soal": "Aku dipake di jari. Aku biasanya dibuat untuk tunangan atau pernikahan. Aku berwarna emas, perak, atau perunggu.",
+    "jawaban": "Cincin"
+  },
+  {
+    "id": 442,
+    "soal": "Aku dipake di leher. Ukuranku besar atau kecil. Aku berwarna-warni. Aku identik dengan wanita.",
+    "jawaban": "Kalung"
+  },
+  {
+    "id": 443,
+    "soal": "Aku sebuah kertas, namun aku dijadikan kebutuhan sehari-hari yang memiliki nominal.",
+    "jawaban": "Uang"
+  },
+  {
+    "id": 444,
+    "soal": "Aku seekor hewan yang berkulit tebal, berwarna abu-abu. Aku memiliki cula.",
+    "jawaban": "Badak"
+  },
+  {
+    "id": 445,
+    "soal": "Aku terdapat di bagian bawah pohon atau tanaman. Aku menancap pada tanah.",
+    "jawaban": "Akar"
+  },
+  {
+    "id": 446,
+    "soal": "Aku sebuah tempat yang sangat luas, pesawat selalu datang mengunjungi aku. Aku juga sangat sibuk sekali dan tidak pernah tutup. Aku banyak dicari oleh para pengguna transportasi untuk bepergian antar negara.",
+    "jawaban": "Bandara"
+  },
+  {
+    "id": 447,
+    "soal": "Aku adalah hasil fermentasi susu. Rasaku asam. Aku memiliki warna kuning.",
+    "jawaban": "Keju"
+  },
+  {
+    "id": 448,
+    "soal": "Aku adalah sebuah kendaraan. Aku biasanya mengantarkan orang ke berbagai pulau. Aku tidak dapat berfungsi bila berada di darat.",
+    "jawaban": "Perahu"
+  },
+  {
+    "id": 449,
+    "soal": "Aku sebagai bahan dasar untuk membuat baju. Aku tipis dan halus. Aku dibeli dengan ukuran per meter.",
+    "jawaban": "Kain"
+  },
+  {
+    "id": 450,
+    "soal": "Aku digunakan untuk merapihkan. Aku bisa membuat rambut menjadi menarik.",
+    "jawaban": "Sisir"
+  },
+  {
+    "id": 451,
+    "soal": "Tugas utamaku adalah mengoyak makanan. Aku memiliki bentuk yang runcing. Aku berada di mulut.",
+    "jawaban": "Taring"
+  },
+  {
+    "id": 452,
+    "soal": "Aku memiliki rasa yang pahit, tetapi aku sangat dibutuhkan oleh orang yang sakit.",
+    "jawaban": "Obat"
+  },
+  {
+    "id": 453,
+    "soal": "Aku berada di pegunungan, dalam peribahasa aku juga dikaitkan dengan menabung.",
+    "jawaban": "Bukit"
+  },
+  {
+    "id": 454,
+    "soal": "Aku memiliki bentuk tabung. Aku dapat menampung minyak dengan jumlah yang cukup banyak.",
+    "jawaban": "Drum"
+  },
+  {
+    "id": 455,
+    "soal": "Aku menghasilkan cahaya sendiri. Kalau dilihat dari bumi aku sangat kecil.",
+    "jawaban": "Bintang"
+  },
+  {
+    "id": 456,
+    "soal": "Tugas utamaku adalah melatih.",
+    "jawaban": "Pelatih"
+  },
+  {
+    "id": 457,
+    "soal": "Aku memiliki sifat yang sangat panas. Aku berasal dari gunung berapi.",
+    "jawaban": "Lahar"
+  },
+  {
+    "id": 458,
+    "soal": "Aku berada di daerah pegunungan. Aku dapat mengurangi pandangan pengendara. Aku sering muncul di pagi hari.",
+    "jawaban": "Kabut"
+  },
+  {
+    "id": 459,
+    "soal": "Tebak siapakah aku? Aku berada di leher. Aku juga berada di kemeja. Aku akan rapih bila dilipat.",
+    "jawaban": "Kerah"
+  },
+  {
+    "id": 460,
+    "soal": "Aku seorang omnivora. Aku juga seorang invertebrata. Aku dapat mengangkat sampai tiga kali berat badan mereka. Aku lebih kecil daripada klip kertas.",
+    "jawaban": "Semut"
+  },
+  {
+    "id": 461,
+    "soal": "Aku satu-satunya mamalia bersayap. Aku tinggal di daerah tropis dan beriklim sedang. Makananku dapat bervariasi dari buah-buahan, serbuk sari, dan nektar, hingga darah hewan lain.",
+    "jawaban": "Kelelawar"
+  },
+  {
+    "id": 462,
+    "soal": "Aku seorang invertebrata. Aku tinggal di sepanjang pantai. Aku memiliki dua capit untuk melindungi diri.",
+    "jawaban": "Kepiting"
+  },
+  {
+    "id": 463,
+    "soal": "Aku adalah mamalia darat terbesar. Aku makan sampai 350 pound per hari. Aku memiliki hidung yang panjang.",
+    "jawaban": "Gajah"
+  },
+  {
+    "id": 464,
+    "soal": "Aku tidak bisa dibakar. Aku juga tidak bisa ditenggelamkan ke dalam air.",
+    "jawaban": "Es"
+  },
+  {
+    "id": 465,
+    "soal": "Aku mudah terbuang dan tapi tidak bisa dihentikan.",
+    "jawaban": "Waktu"
+  },
+  {
+    "id": 466,
+    "soal": "Aku kehilangan kepalaku di pagi hari dan mendapatkan kembali di malam hari.",
+    "jawaban": "Bantal"
+  },
+  {
+    "id": 467,
+    "soal": "Aku adalah cara untuk mengucapkan sampai jumpa kepada kekasih atau kerabat.",
+    "jawaban": "Peluk"
+  },
+  {
+    "id": 468,
+    "soal": "Aku adalah mineral penting untuk kesehatan Anda.",
+    "jawaban": "Vitamin"
+  },
+  {
+    "id": 469,
+    "soal": "Aku bisa berlari sampai 35 mil per jam. Aku makan ratusan pon dedaunan dalam seminggu. Tinggi badanku membantuku untuk waspada terhadap predator. Aku adalah mamalia tertinggi.",
+    "jawaban": "Jerapah"
+  },
+  {
+    "id": 470,
+    "soal": "Aku suka memutar tapi kepalaku tetap tegak. Setelah aku masuk, aku menjadi ketat.",
+    "jawaban": "Sekrup"
+  },
+  {
+    "id": 471,
+    "soal": "Aku seorang mamalia. Aku juga seorang herbivora. Ketika aku takut, aku akan lari. Aku memiliki telinga yang besar untuk membantu aku mendengar.",
+    "jawaban": "Kelinci"
+  },
+  {
+    "id": 472,
+    "soal": "Aku seorang mamalia. Aku juga seorang karnivora. Aku berburu di malam hari. Aku adalah kucing terbesar dan terkuat.",
+    "jawaban": "Harimau"
+  },
+  {
+    "id": 473,
+    "soal": "Aku seorang invertebrata. Aku menyerap oksigen dan melepaskan karbon. Aku menjalani sebagian besar hidup saya di bawah tanah.",
+    "jawaban": "Cacing"
+  },
+  {
+    "id": 474,
+    "soal": "Aku lebih tinggi dari raja.",
+    "jawaban": "Mahkota"
+  },
+  {
+    "id": 475,
+    "soal": "Aku terbang, namun aku tidak memiliki sayap. Aku menangis, namun aku tidak punya mata. Aku bisa membuat langit jadi gelap dan terang.",
+    "jawaban": "Awan"
+  },
+  {
+    "id": 476,
+    "soal": "Aku memiliki kaki di kepala aku.",
+    "jawaban": "Kutu"
+  },
+  {
+    "id": 477,
+    "soal": "Aku adalah komputer bertenaga surya mini.",
+    "jawaban": "Kalkulator"
+  },
+  {
+    "id": 478,
+    "soal": "Semakin pendek saya, semakin besar saya.",
+    "jawaban": "Suhu"
+  },
+  {
+    "id": 479,
+    "soal": "Aku berasal dari laut dan berwarna putih seperti salju. Ketika aku kembali ke air, aku hilang tanpa bekas.",
+    "jawaban": "Garam"
+  },
+  {
+    "id": 480,
+    "soal": "Tebak siapakah aku? Aku cepat saat kurus. Aku lamban saat gemuk. Angin adalah mimpi terburuk saya. Aku sangat berguna saat gelap gulita.",
+    "jawaban": "Lilin"
+  },
+  {
+    "id": 481,
+    "soal": "Aku lembut, berbulu, dan berada dekat dengan pintu. Akulah yang selalu tinggal di lantai.",
+    "jawaban": "Keset"
+  },
+  {
+    "id": 482,
+    "soal": "Aku bukan mainan meski banyak yang menggunakanku untuk kesenangan. Aku punya pantat, tapi aku tidak bisa buang air besar.",
+    "jawaban": "Rokok"
+  },
+  {
+    "id": 483,
+    "soal": "Aku bisa berenang, tapi tidak pernah basah. Aku bisa berlari, tapi tidak pernah bosan. Aku mengikutimu kemana-mana, tapi tidak pernah mengucapakan sepatah kata pun.",
+    "jawaban": "Bayangan"
+  },
+  {
+    "id": 484,
+    "soal": "Aku melihat apa yang kamu lihat, merasakan apa yang kamu rasakan. Aku tahu semua gerakanmu sebelum kamu melakukannya. Aku bahkan tahu gerakan yang tidak kamu buat.",
+    "jawaban": "Otak"
+  },
+  {
+    "id": 485,
+    "soal": "Aku sangat tips. Aku bisa jatuh dari sebuah bangunan dan tidak hancur, tapi di air aku akan hancur.",
+    "jawaban": "Kertas"
+  },
+  {
+    "id": 486,
+    "soal": "Aku tempat Titanic berada saat ini.",
+    "jawaban": "Atlantik"
+  },
+  {
+    "id": 487,
+    "soal": "Kamu perlu ribuan aku untuk membuat gambar digital.",
+    "jawaban": "Pixel"
+  },
+  {
+    "id": 488,
+    "soal": "Jika kamu memiliki aku, kamu ingin berbagi aku. Begitu kamu berbagi aku, kamu tidak memiliki aku lagi.",
+    "jawaban": "Rahasia"
+  },
+  {
+    "id": 489,
+    "soal": "Setiap orang membutuhkan aku tapi mereka memberi saya pergi setiap hari.",
+    "jawaban": "Uang"
+  },
+  {
+    "id": 490,
+    "soal": "Anda membuangku di laut saat Anda menggunakan aku dan membawa aku masuk lagi saat Anda selesai.",
+    "jawaban": "Jangkar"
+  },
+  {
+    "id": 491,
+    "soal": "Aku adalah sejenis burung. Aku memiliki dua mata di depan dan banyak mata di ekor saya.",
+    "jawaban": "Merak"
+  },
+  {
+    "id": 492,
+    "soal": "Semakin cepat kamu berlari, semakin sulit untuk menangkap aku.",
+    "jawaban": "Nafas"
+  },
+  {
+    "id": 493,
+    "soal": "Aku digunakan untuk menyeberangi sungai. Aku berada di atas air.",
+    "jawaban": "Jembatan"
+  },
+  {
+    "id": 494,
+    "soal": "Aku adalah surga kecil yang dikelilingi oleh kekeringan dan panas. Aku biasanya terdapat di padang pasir.",
+    "jawaban": "Oasis"
+  },
+  {
+    "id": 495,
+    "soal": "Aku adalah tempat di akhirat yang berisi orang-orang baik.",
+    "jawaban": "Surga"
+  },
+  {
+    "id": 496,
+    "soal": "Aku lima bersaudara yang memiliki Ibu tapi tak berbapak.",
+    "jawaban": "Jari"
+  },
+  {
+    "id": 497,
+    "soal": "Hewan, hewan apa yang perut, kepala, mata, bahkan kakinya di kepala?",
+    "jawaban": "Kutu"
+  },
+  {
+    "id": 498,
+    "soal": "Sebutkan 4 nama buah dalam satu detik?",
+    "jawaban": "Rujak"
+  },
+  {
+    "id": 499,
+    "soal": "Bis apa yang bisa dimakan?",
+    "jawaban": "Biskuit"
+  },
+  {
+    "id": 500,
+    "soal": "Dari atas sampai bawah rasanya sama?",
+    "jawaban": "Toge"
+  },
+  {
+    "id": 501,
+    "soal": "Bisa di pegang gak bisa diliat?",
+    "jawaban": "Kuping"
+  },
+  {
+    "id": 502,
+    "soal": "Di kupas kulitnya ada bijinya, digigit bijinya ada batangnya apa coba?",
+    "jawaban": "Jagung"
+  },
+  {
+    "id": 503,
+    "soal": "Lahir di arab, besar di arab, tabi ngga bisa bahasa arab, apa hayo?",
+    "jawaban": "Unta"
+  },
+  {
+    "id": 504,
+    "soal": "Ban apa yang enak dimakan?",
+    "jawaban": "Bandeng"
+  },
+  {
+    "id": 505,
+    "soal": "Buah apa yang selalu membuat kita waspada?",
+    "jawaban": "Buahaya"
+  },
+  {
+    "id": 506,
+    "soal": "Nyarinya susah, setelah dapet dibuang, apaan?",
+    "jawaban": "Upil"
+  },
+  {
+    "id": 507,
+    "soal": "Binatang apa yang gak pernah rugi?",
+    "jawaban": "Laba-laba"
+  },
+  {
+    "id": 508,
+    "soal": "Gajah apa yang belalainya pendek?",
+    "jawaban": "Gajah pesek"
+  },
+  {
+    "id": 509,
+    "soal": "Sapi, sapi apa yang bisa nulis?",
+    "jawaban": "Sapidol"
+  },
+  {
+    "id": 510,
+    "soal": "Aku punya mata 3, kakiku 1, aku suka berdiri dipinggir jalan, apakah aku?",
+    "jawaban": "Lampu merah"
+  },
+  {
+    "id": 511,
+    "soal": "Gimana caranya orang bungkuk tidur?",
+    "jawaban": "Merem"
+  },
+  {
+    "id": 512,
+    "soal": "Apa yang bulet kecil item, tapi kalo dipencet keluar orangnya?",
+    "jawaban": "Bel rumah"
+  },
+  {
+    "id": 513,
+    "soal": "Apaan yang naik turun dibawah puser?",
+    "jawaban": "Resleting"
+  },
+  {
+    "id": 514,
+    "soal": "Hewan apa yang selalu jadi korban pemerasan?",
+    "jawaban": "Sapi perah"
+  },
+  {
+    "id": 515,
+    "soal": "Ban apa yang ada diatas tiang?",
+    "jawaban": "Bandera"
+  },
+  {
+    "id": 516,
+    "soal": "Nasi apa yang gak pernah basi?",
+    "jawaban": "Nasihat"
+  },
+  {
+    "id": 517,
+    "soal": "Benda panjang dan lonjong, huruf awalnya K, huruf akhirnya L, apa hayu?",
+    "jawaban": "Kapsul"
+  },
+  {
+    "id": 518,
+    "soal": "Malam apa yang mengerikan?",
+    "jawaban": "Malampir"
+  },
+  {
+    "id": 519,
+    "soal": "Punya kepala, punya leher, tidak punya tangan, tidak punya kaki, tetapi dia bisa berdiri?",
+    "jawaban": "Botol"
+  },
+  {
+    "id": 520,
+    "soal": "Game apa yang sangat mengerikan?",
+    "jawaban": "Gamepa bumi"
+  },
+  {
+    "id": 521,
+    "soal": "Jamu apa yang kalau diminum merusak badan?",
+    "jawaban": "Jamuran"
+  },
+  {
+    "id": 522,
+    "soal": "Benda apa yang dimasukin malah keluar lagi?",
+    "jawaban": "Kancing baju"
+  },
+  {
+    "id": 523,
+    "soal": "Nenek nenek jatuh di kali, munculnya dimana?",
+    "jawaban": "Dikoran"
+  },
+  {
+    "id": 524,
+    "soal": "Orang apa yang masuk botol?",
+    "jawaban": "Orang aring"
+  },
+  {
+    "id": 525,
+    "soal": "Kue apa yang tengahnya ga ada rasanya?",
+    "jawaban": "Donat"
+  },
+  {
+    "id": 526,
+    "soal": "Kalau dikocok putihnya gak keluar, tapi kalau dipencet malah keluar?",
+    "jawaban": "Pasta gigi"
+  },
+  {
+    "id": 527,
+    "soal": "Kutu apa yang paling mengerikan?",
+    "jawaban": "Kutukan"
+  },
+  {
+    "id": 528,
+    "soal": "Jika ada lilin dan obor, mana yang sebaiknya dinyalakan dulu agar lebih terang?",
+    "jawaban": "Korek api"
+  },
+  {
+    "id": 529,
+    "soal": "Kering tapi basah, apakah itu?",
+    "jawaban": "Keringat"
+  },
+  {
+    "id": 530,
+    "soal": "Makanan apa yang nama dan warnanya sama?",
+    "jawaban": "Coklat"
+  },
+  {
+    "id": 531,
+    "soal": "Es apa yang suka dinaiki orang?",
+    "jawaban": "Eskalator"
+  },
+  {
+    "id": 532,
+    "soal": "Bank apa yang malah rugi?",
+    "jawaban": "Bankrut"
+  },
+  {
+    "id": 533,
+    "soal": "Meski sudah dipotong, tapi tetap panjang, apakah itu?",
+    "jawaban": "Kacang panjang"
+  },
+  {
+    "id": 534,
+    "soal": "Dianggap bertambah, tetapi nyatanya berkurang, apakah itu?",
+    "jawaban": "Umur"
+  },
+  {
+    "id": 535,
+    "soal": "Kereta apa yang tidak bisa menampung orang remaja, dewasa dan orang tua?",
+    "jawaban": "Kereta bayi"
+  },
+  {
+    "id": 536,
+    "soal": "Mata apa yang ukurannya sekitar 15 cm?",
+    "jawaban": "Mata uang"
+  },
+  {
+    "id": 537,
+    "soal": "Kalau hitam dibilang bersih tetapi jika putih dibilang kotor, apakah itu?",
+    "jawaban": "Papan tulis"
+  },
+  {
+    "id": 538,
+    "soal": "Angka itu jumlahnya tak terhingga, tetapi angka apa yang paling tinggi?",
+    "jawaban": "Angkasa"
+  },
+  {
+    "id": 539,
+    "soal": "Mobil apa yang hanya bisa dilihat di HP android dan iphone?",
+    "jawaban": "Mobile legend"
+  },
+  {
+    "id": 540,
+    "soal": "Bisa melihat tetapi tidak bisa mendengar, apakah itu?",
+    "jawaban": "Mata"
+  },
+  {
+    "id": 541,
+    "soal": "Makan gratis, minum gratis bahkan tidur pun juga gratis tapi anehnya tidak ada yang suka, tempat apakah itu?",
+    "jawaban": "Penjara"
+  },
+  {
+    "id": 542,
+    "soal": "Ketua apa yang rambutnya putih?",
+    "jawaban": "Ketuaan"
+  },
+  {
+    "id": 543,
+    "soal": "Perang apa yang senjatanya lem?",
+    "jawaban": "Perangko"
+  },
+  {
+    "id": 544,
+    "soal": "Ular apa yang bisa senam?",
+    "jawaban": "Ularaga"
+  },
+  {
+    "id": 545,
+    "soal": "Paku apa yang ditakuti kuda?",
+    "jawaban": "Pakusir"
+  },
+  {
+    "id": 546,
+    "soal": "Bulat berwarna, tapi kalau kentut jadi kurus apa itu?",
+    "jawaban": "Balon"
+  },
+  {
+    "id": 547,
+    "soal": "Kota apa yang paling menyedihkan?",
+    "jawaban": "Kota malang"
+  },
+  {
+    "id": 548,
+    "soal": "Naiknya cepet turunnya lamban?",
+    "jawaban": "Ingus"
+  },
+  {
+    "id": 549,
+    "soal": "Tong…. tong apa yang rasanya enak?",
+    "jawaban": "Tongseng"
+  },
+  {
+    "id": 550,
+    "soal": "Ban itu isinya udara, tetapi ada ban yang isinya udaranya dingin?",
+    "jawaban": "Bandung"
+  },
+  {
+    "id": 551,
+    "soal": "Kota apa yang rasanya pahit?",
+    "jawaban": "Pare pare"
+  },
+  {
+    "id": 552,
+    "soal": "Bel apa yang tidak pernah berbunyi dan sangat licin?",
+    "jawaban": "Belut"
+  },
+  {
+    "id": 553,
+    "soal": "Singa apa yang sering dikunjungi orang?",
+    "jawaban": "Singapore"
+  },
+  {
+    "id": 554,
+    "soal": "Sapi apa yang bisa nempel ditembok?",
+    "jawaban": "Sapiderman"
+  },
+  {
+    "id": 555,
+    "soal": "Binatang apa yang paling banyak muridnya?",
+    "jawaban": "Kanguru"
+  },
+  {
+    "id": 556,
+    "soal": "Ular apa yang paling digemari anak-anak?",
+    "jawaban": "Ular tangga"
+  },
+  {
+    "id": 557,
+    "soal": "Dari atas bisa terbang ke bawah, tetapi sudah sampai ke bawah nggak bisa terbang keatas lagi?",
+    "jawaban": "Daun"
+  },
+  {
+    "id": 558,
+    "soal": "Laut apa yang nggak punya nyawa?",
+    "jawaban": "Laut mati"
+  },
+  {
+    "id": 559,
+    "soal": "Benda apa yang pertumbuhannya dari panjang jadi pendek?",
+    "jawaban": "Pensil"
+  },
+  {
+    "id": 560,
+    "soal": "Mata apa yang malam hari tutup?",
+    "jawaban": "Matahari"
+  },
+  {
+    "id": 561,
+    "soal": "Mata apa yang bisa naklukin banteng?",
+    "jawaban": "Matador"
+  },
+  {
+    "id": 562,
+    "soal": "Om apa yang pagi siang malam seneng dilaut?",
+    "jawaban": "Ombak"
+  },
+  {
+    "id": 563,
+    "soal": "Raja apa yang hobinya terbang?",
+    "jawaban": "Rajawali"
+  },
+  {
+    "id": 564,
+    "soal": "Raja apa yang kepalanya sering dipegang?",
+    "jawaban": "Raja catur"
+  },
+  {
+    "id": 565,
+    "soal": "Rambut apa yang gak perlu disisir?",
+    "jawaban": "Rambutan"
+  },
+  {
+    "id": 566,
+    "soal": "Sapu apa yang bisa dikantongi?",
+    "jawaban": "Saputangan"
+  },
+  {
+    "id": 567,
+    "soal": "Selat apa yang tidak dihimpit oleh dua pulau?",
+    "jawaban": "Selatan"
+  },
+  {
+    "id": 568,
+    "soal": "Tank apa yang diucapin terakhir kali?",
+    "jawaban": "Tank you"
+  },
+  {
+    "id": 569,
+    "soal": "Anak apa yang larinya cepet?",
+    "jawaban": "Anak panah"
+  },
+  {
+    "id": 570,
+    "soal": "Awan apa yang nggak ada dilangit, nggak nurunin hujan, malah bikin orang jengkel?",
+    "jawaban": "Sariawan"
+  },
+  {
+    "id": 571,
+    "soal": "Anak, anaknya siapa yang selalu diinjak-injak?",
+    "jawaban": "Anak tangga"
+  },
+  {
+    "id": 572,
+    "soal": "Tangga apa yang nggak bisa ndinaiki?",
+    "jawaban": "Tangga nada"
+  },
+  {
+    "id": 573,
+    "soal": "Bibir apa yang nyeremin?",
+    "jawaban": "Bibir jurang"
+  },
+  {
+    "id": 574,
+    "soal": "Kerjanya keliling terus setiap hari, tidak pernah capek, siapakah dia?",
+    "jawaban": "Jarum jam"
+  },
+  {
+    "id": 575,
+    "soal": "Mandi apa yang nggak bikin badan basah?",
+    "jawaban": "Mandi bola"
+  },
+  {
+    "id": 576,
+    "soal": "Siapa yang hanya punya ‘HAK’ tapi tidak punya ‘Kejwajiban’?",
+    "jawaban": "Sepatu"
+  },
+  {
+    "id": 577,
+    "soal": "Bulan apa yang tidak tercantum di kalender?",
+    "jawaban": "Bulan madu"
+  },
+  {
+    "id": 578,
+    "soal": "Dia bisa menolong orang dalam kegelapan, tapi dia malah mengorbankan diri pelan-pelan, siapakah dia?",
+    "jawaban": "Lilin"
+  },
+  {
+    "id": 579,
+    "soal": "Makin diisi, makin ringan, apa hayu?",
+    "jawaban": "Balon gas"
+  },
+  {
+    "id": 580,
+    "soal": "Hakim apa yang tugasnya bukan di pengadilan?",
+    "jawaban": "Hakim garis"
+  },
+  {
+    "id": 581,
+    "soal": "Hewan apa yang sering menerima kesalahan orang lain?",
+    "jawaban": "Kambing hitam"
+  },
+  {
+    "id": 582,
+    "soal": "Nama anak yang paling panjang sedunia?",
+    "jawaban": "Anak sungai"
+  },
+  {
+    "id": 583,
+    "soal": "Kecil, kurus, tapi banyak dagingnya, apa hayu?",
+    "jawaban": "Sate"
+  },
+  {
+    "id": 584,
+    "soal": "Masuk kering, keluar lengket, apa hayu?",
+    "jawaban": "Permen karet"
+  },
+  {
+    "id": 585,
+    "soal": "Barang apa yang justru berguna kalo udah pecah?",
+    "jawaban": "Telur"
+  },
+  {
+    "id": 586,
+    "soal": "Apa arti pribahasa ‘sambil menyelam minum air’?",
+    "jawaban": "Tenggelam"
+  },
+  {
+    "id": 587,
+    "soal": "Ibu apa yang kalo berdiri bikin orang tersanjung?",
+    "jawaban": "Ibu jari"
+  },
+  {
+    "id": 588,
+    "soal": "Warna dan buah apa yang disukai wanita?",
+    "jawaban": "Merah jambu"
+  },
+  {
+    "id": 589,
+    "soal": "Kabar apa sebesar gajah tetapi beratnya 0 kg?",
+    "jawaban": "Kabar burung"
+  },
+  {
+    "id": 590,
+    "soal": "Benda apa keluar ketika diputar?",
+    "jawaban": "Lipstik"
+  },
+  {
+    "id": 591,
+    "soal": "Kepalanya merah, jalannya mundur, tapi bukan undur-undur?",
+    "jawaban": "Obat nyamuk"
+  },
+  {
+    "id": 592,
+    "soal": "Bunga-bunga apa yang paling mahal?",
+    "jawaban": "Bungalow"
+  },
+  {
+    "id": 593,
+    "soal": "Apa yang sebesar gajah tetapi beratnya 0 kg?",
+    "jawaban": "Bayangan gajah"
+  },
+  {
+    "id": 594,
+    "soal": "Kebo apa yang bikin capek hayo?",
+    "jawaban": "Kebogor"
+  },
+  {
+    "id": 595,
+    "soal": "Bagaimana caranya menghilangkan bau pete dimulut?",
+    "jawaban": "Makan jengkol"
+  },
+  {
+    "id": 596,
+    "soal": "Apa yang dipunyai kucing tapi tidak dipunyai hewan laen?",
+    "jawaban": "Anak kucing"
+  },
+  {
+    "id": 597,
+    "soal": "Kera apa yang bisa masuk botol",
+    "jawaban": "Keratingdaeng"
+  },
+  {
+    "id": 598,
+    "soal": "Kemana-mana selalu berlima, tapi yang masuk cuman satu apa hayo?",
+    "jawaban": "Ngupil"
+  },
+  {
+    "id": 599,
+    "soal": "Kota apa yang nilainya selalu tujuh?",
+    "jawaban": "Salatiga"
+  },
+  {
+    "id": 600,
+    "soal": "Bola apa yang mirip sama kucing?",
+    "jawaban": "Bolaemon"
+  },
+  {
+    "id": 601,
+    "soal": "Hewan apa yang bersaudara?",
+    "jawaban": "Katak beradik"
+  },
+  {
+    "id": 602,
+    "soal": "Salah apa yang nggak pernah dihukum tapi rasanya sakit banget?",
+    "jawaban": "Salah urat"
+  },
+  {
+    "id": 603,
+    "soal": "Bel apa yang kalo dipencet bisa melukai?",
+    "jawaban": "Beling"
+  },
+  {
+    "id": 604,
+    "soal": "Kopi apa yang nggak bisa diminum?",
+    "jawaban": "Kopiah"
+  },
+  {
+    "id": 605,
+    "soal": "Kecoa apa yang masuk rumah sakit?",
+    "jawaban": "Kecoalakaan"
+  },
+  {
+    "id": 606,
+    "soal": "Kadal, kadal apa yang bikin sakit perut?",
+    "jawaban": "Kadaluarsa"
+  },
+  {
+    "id": 607,
+    "soal": "Apa bahasa arabnya nenek-nenek jatuh dari lantai 10?",
+    "jawaban": "Almarhum"
+  },
+  {
+    "id": 608,
+    "soal": "Kenapa orang suka berkhayal?",
+    "jawaban": "Karena gratis"
+  },
+  {
+    "id": 609,
+    "soal": "Sate apa yang bisa terbang?",
+    "jawaban": "Satelit"
+  },
+  {
+    "id": 610,
+    "soal": "Sapi apa yang larinya kenceng dan bisa ngerem?",
+    "jawaban": "Sapida motor"
+  },
+  {
+    "id": 611,
+    "soal": "Tukang apa yang kalo berhitung diulang-ulang?",
+    "jawaban": "Tukang foto"
+  },
+  {
+    "id": 612,
+    "soal": "Pedas dibalik jadi sedap, sup dibalik jadi apa?",
+    "jawaban": "Tumpah"
+  },
+  {
+    "id": 613,
+    "soal": "Ikan apa yang walau sudah diair diam saja?",
+    "jawaban": "Ikan goreng"
+  },
+  {
+    "id": 614,
+    "soal": "Negara apa yang namanya mirip nama perempuan?",
+    "jawaban": "Yunani"
+  },
+  {
+    "id": 615,
+    "soal": "Kelapa apa yang bikin badan kurus?",
+    "jawaban": "Kelaparan"
+  },
+  {
+    "id": 616,
+    "soal": "Menarik apa yang nggak butuh tali atau tambang?",
+    "jawaban": "Menarik nafas"
+  },
+  {
+    "id": 617,
+    "soal": "Sungai apa di Jakarta yang alirannya deres?",
+    "jawaban": "Kalideres"
+  },
+  {
+    "id": 618,
+    "soal": "Dia nggak bisa bergerak, tapi bisa naik bisa turun. Apakah itu?",
+    "jawaban": "Jalan"
+  },
+  {
+    "id": 619,
+    "soal": "Ayam apa yang nggak takut sama harimau?",
+    "jawaban": "Ayam nekad"
+  },
+  {
+    "id": 620,
+    "soal": "Kepala kepiting adanya dimana?",
+    "jawaban": "Diketek"
+  },
+  {
+    "id": 621,
+    "soal": "Gigi apa yang nggak bisa ngunyah?",
+    "jawaban": "Gigi motor"
+  },
+  {
+    "id": 622,
+    "soal": "Kota apa yang nggak pernah sendiri?",
+    "jawaban": "Samarinda"
+  },
+  {
+    "id": 623,
+    "soal": "Hidup diatas, matipun diatas. Apakah itu?",
+    "jawaban": "Lampu bohlam"
+  },
+  {
+    "id": 624,
+    "soal": "Negara apa yang paling pedas?",
+    "jawaban": "Chili"
+  },
+  {
+    "id": 625,
+    "soal": "Yang dibeli tidak pakai barang itu, dan yang pakai tidak tahu barang itu. Apakah itu?",
+    "jawaban": "Peti mati"
+  },
+  {
+    "id": 626,
+    "soal": "Es apa yang ditunggu-tunggu banyak orang?",
+    "jawaban": "Esok hari"
+  },
+  {
+    "id": 627,
+    "soal": "Pulau apa yang disukai lebah?",
+    "jawaban": "Madura"
+  },
+  {
+    "id": 628,
+    "soal": "Sabun apa yang genit?",
+    "jawaban": "Sabun colek"
+  },
+  {
+    "id": 629,
+    "soal": "Bola apa yang bikin kita bingung?",
+    "jawaban": "Bolak-balik"
+  },
+  {
+    "id": 630,
+    "soal": "Ban apa yang ganas larinya?",
+    "jawaban": "Banteng"
+  },
+  {
+    "id": 631,
+    "soal": "Hewan apa yang punya kelamin lebih dari satu?",
+    "jawaban": "Barongsai"
+  },
+  {
+    "id": 632,
+    "soal": "Hewan apa yang suka pindah rumah?",
+    "jawaban": "Siput"
+  },
+  {
+    "id": 633,
+    "soal": "Bulu apa yang berat sekali?",
+    "jawaban": "Bu Lurah"
+  },
+  {
+    "id": 634,
+    "soal": "Apa yang pantatnya selalu dihisap?",
+    "jawaban": "Rokok"
+  },
+  {
+    "id": 635,
+    "soal": "Gajah mati meninggalkan gading, harimau mati meninggalkan belang, manusia mati meninggalkan?",
+    "jawaban": "Hutang"
+  },
+  {
+    "id": 636,
+    "soal": "Cuman goyang-goyang kaki dapat duit. Siapakah dia?",
+    "jawaban": "Tukang jahit"
+  },
+  {
+    "id": 637,
+    "soal": "Cuman kipas-kipas tapi dapat duit. Siapakah dia?",
+    "jawaban": "Tukang sate"
+  },
+  {
+    "id": 638,
+    "soal": "Jam apa yang sering dipakai dukun?",
+    "jawaban": "Jampi-jampi"
+  },
+  {
+    "id": 639,
+    "soal": "Binatang apa yang paling banyak lewat di jalan raya?",
+    "jawaban": "Kijang"
+  },
+  {
+    "id": 640,
+    "soal": "Binatang apa yang kalo dikasih obat malah mati?",
+    "jawaban": "Nyamuk"
+  },
+  {
+    "id": 641,
+    "soal": "Monyet apa yang berlari-lari di lapangan?",
+    "jawaban": "Monyetak gol"
+  },
+  {
+    "id": 642,
+    "soal": "Air apa yang perlu digetok?",
+    "jawaban": "Air keras"
+  },
+  {
+    "id": 643,
+    "soal": "Pisau apa yang tidak bisa memotong?",
+    "jawaban": "Pisau cukur"
+  },
+  {
+    "id": 644,
+    "soal": "Kalu dia duduk malah lebih tinggi dari pada saat dia berdiri?",
+    "jawaban": "Kucing duduk"
+  },
+  {
+    "id": 645,
+    "soal": "Masuknya hijau, keluarnya merah. Apa hayu?",
+    "jawaban": "Sirih"
+  },
+  {
+    "id": 646,
+    "soal": "Dokter apa yang tidak boleh jatuh cinta pada pasiennya?",
+    "jawaban": "Dokter hewan"
+  },
+  {
+    "id": 647,
+    "soal": "Bunga apa yang paling disuka cewek?",
+    "jawaban": "Bunga bank"
+  },
+  {
+    "id": 648,
+    "soal": "Ciuman sayang di kening, ciuman cinta di pipi, ciuman panas di..?",
+    "jawaban": "Dikompor"
+  },
+  {
+    "id": 649,
+    "soal": "Kera apa yang paling besar se-jawa barat?",
+    "jawaban": "Kerawang"
+  },
+  {
+    "id": 650,
+    "soal": "Kera apa yang bersaudara?",
+    "jawaban": "Kerabat"
+  },
+  {
+    "id": 651,
+    "soal": "Bentuknya kotak, dipegang empuk, dan bisa dimakan. Apa hayu?",
+    "jawaban": "Tahu"
+  },
+  {
+    "id": 652,
+    "soal": "Panjang, berbulu, kalo dimasukin harus pelan-pelan, kalau tidak nanti berdarah. Apa hayu?",
+    "jawaban": "Sikat gigi"
+  },
+  {
+    "id": 653,
+    "soal": "Seribu dibagi dua, jadi?",
+    "jawaban": "Sobek"
+  },
+  {
+    "id": 654,
+    "soal": "Apa yang dilakukan polisi ditengah jalan?",
+    "jawaban": "Tidur"
+  },
+  {
+    "id": 655,
+    "soal": "Siapa menteri kebersihan china?",
+    "jawaban": "Kemo Cheng"
+  },
+  {
+    "id": 656,
+    "soal": "Berdiri sama tinggi, duduk sama rendah, berlari sama …?",
+    "jawaban": "Capeknya"
+  },
+  {
+    "id": 657,
+    "soal": "Kota apa yang selalu minta perhiasan sama ibunya?",
+    "jawaban": "Magelang"
+  },
+  {
+    "id": 658,
+    "soal": "Apa yang selalu jauh di mata dekat di hati?",
+    "jawaban": "Paru paru"
+  },
+  {
+    "id": 659,
+    "soal": "Yang beli nggak pakai, yang pakai tidak beli, yang jual nggak mau pakai?",
+    "jawaban": "Kain kafan"
+  },
+  {
+    "id": 660,
+    "soal": "Tanah apa yang tidak bisa diwariskan?",
+    "jawaban": "Tanah abang"
+  },
+  {
+    "id": 661,
+    "soal": "Bis apa yang menyesatkan?",
+    "jawaban": "Bisikan setan"
+  },
+  {
+    "id": 662,
+    "soal": "Makan apa yang nggak bakal bikin kenyang?",
+    "jawaban": "Makan waktu"
+  },
+  {
+    "id": 663,
+    "soal": "Surat apa yang tidak pernah dibalas oleh pembacanya?",
+    "jawaban": "Surat kabar"
+  },
+  {
+    "id": 664,
+    "soal": "Hari apa yang nggak sempit?",
+    "jawaban": "Hari Lebaran"
+  },
+  {
+    "id": 665,
+    "soal": "Bentuknya lingkaran, ada kacangnya ditengah-tengah, bisa dijilat, huruf depannya M huruf belakangnya K. Apa hayu?",
+    "jawaban": "Martabak"
+  },
+  {
+    "id": 666,
+    "soal": "Oleh-oleh apa yang dibawa kakek saat pulang dari berendam dilaut?",
+    "jawaban": "Telor asin"
+  },
+  {
+    "id": 667,
+    "soal": "Ayam apa yang selalu dicari orang?",
+    "jawaban": "Ayam hilang"
+  },
+  {
+    "id": 668,
+    "soal": "Orang apa yang berenang tapi rambutnya tidak basah?",
+    "jawaban": "Orang botak"
+  },
+  {
+    "id": 669,
+    "soal": "Barang apa yang kalo perlu dibuang, kalo sudah nggak perlu malah diambil?",
+    "jawaban": "Jangkar kapal"
+  },
+  {
+    "id": 670,
+    "soal": "Negara apa yang doyannya minum?",
+    "jawaban": "Australia"
+  },
+  {
+    "id": 671,
+    "soal": "Buah apa yang nggak bisa dipetik?",
+    "jawaban": "Buah jatuh"
+  },
+  {
+    "id": 672,
+    "soal": "Apa bahasa inggrisnya harimau yang jago main golf?",
+    "jawaban": "Tiger wood"
+  },
+  {
+    "id": 673,
+    "soal": "Sebutkan makanan ala anak punk",
+    "jawaban": "Punksit"
+  },
+  {
+    "id": 674,
+    "soal": "Sebutkan tempat mangkal anak punk",
+    "jawaban": "Punkalan ojek"
+  },
+  {
+    "id": 675,
+    "soal": "Shampoo apa yang bisa mengeluarkan asap?",
+    "jawaban": "Shampoorna hijau"
+  },
+  {
+    "id": 676,
+    "soal": "Suku apa yang suka berjaga-jaga tiap malam?",
+    "jawaban": "Sukuriti"
+  },
+  {
+    "id": 677,
+    "soal": "Tari apa yang paling menakutkan?",
+    "jawaban": "Taring harimau"
+  },
+  {
+    "id": 678,
+    "soal": "Tari apa yang gerakannya tidak usah dipelajari?",
+    "jawaban": "Tarik nafas"
+  },
+  {
+    "id": 679,
+    "soal": "Telor apa yang paling keras?",
+    "jawaban": "Telortoar"
+  },
+  {
+    "id": 680,
+    "soal": "Tempe apa yang menyakitkan?",
+    "jawaban": "Tempeleng"
+  },
+  {
+    "id": 681,
+    "soal": "Tempe apa yang tidak bisa dimakan?",
+    "jawaban": "Temperatur"
+  },
+  {
+    "id": 682,
+    "soal": "Tong apa yang tidak bisa buat nyimpen krupuk?",
+    "jawaban": "Tongkat"
+  },
+  {
+    "id": 683,
+    "soal": "Apa bahasa arabnya diam ditempat?",
+    "jawaban": "Takabur"
+  },
+  {
+    "id": 684,
+    "soal": "Mata apa yang nggak bisa pakai kacamata?",
+    "jawaban": "Mata kaki"
+  },
+  {
+    "id": 685,
+    "soal": "Mi apa yang paling banyak di terminal?",
+    "jawaban": "Mikrolet"
+  },
+  {
+    "id": 686,
+    "soal": "Nada apa yang punya pangkat?",
+    "jawaban": "Nada mayor"
+  },
+  {
+    "id": 687,
+    "soal": "Nasi apa yang nggak bisa hilang?",
+    "jawaban": "Nasionalisme"
+  },
+  {
+    "id": 688,
+    "soal": "Panci apa yang bisa dipakai buat nangkep ikan?",
+    "jawaban": "Pancing ikan"
+  },
+  {
+    "id": 689,
+    "soal": "Resep apa yang dibayar harian?",
+    "jawaban": "Resepsionis"
+  },
+  {
+    "id": 690,
+    "soal": "Sambal yang berbahaya?",
+    "jawaban": "Kesambal petir"
+  },
+  {
+    "id": 691,
+    "soal": "Kasur apa yang tidak bisa ditidurin?",
+    "jawaban": "Kasurupan"
+  },
+  {
+    "id": 692,
+    "soal": "Kencan apa yang paling menyakitkan?",
+    "jawaban": "Kencantol kawat"
+  },
+  {
+    "id": 693,
+    "soal": "Ketan apa yang menyakitkan?",
+    "jawaban": "Ketancap pisau"
+  },
+  {
+    "id": 694,
+    "soal": "Kirim apa yang masuk penjara?",
+    "jawaban": "Kiriminal"
+  },
+  {
+    "id": 695,
+    "soal": "Kue apa yang asem?",
+    "jawaban": "Kuetek"
+  },
+  {
+    "id": 696,
+    "soal": "Kunci apa yang sering ditaruh dikepala?",
+    "jawaban": "Kuncir rambut"
+  }
+]

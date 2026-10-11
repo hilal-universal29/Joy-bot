@@ -1,6 +1,7 @@
 const processingCommands = new Set();
 const MAX_MESSAGE_AGE_SECONDS = 20;
 
+const ownerCommands = require("../commands/owner");
 const reg = require("../commands/system/reg");
 const daily = require("../commands/economy/daily");
 const transaction = require("../commands/economy/transaction");
@@ -9,12 +10,69 @@ const stats = require("../commands/system/stats");
 const menu = require("../commands/system/menu");
 const aiHandler = require("../commands/ai/aiHandler");
 const quote = require("../commands/games/quote");
-const caklontong = require("../commands/games/caklontong");
 const tebakangka = require("../commands/games/tebakangka");
+const tebakgambar = require("../commands/games/tebakgambar");
+const quiz = require("../commands/games/quiz");
+const slot = require("../commands/games/slot");
 const sticker = require("../commands/media/sticker");
 const tomed = require("../commands/media/tomed");
 const brat = require("../commands/media/brat");
 const ttdl = require("../commands/media/ttdl");
+const shop = require("../commands/economy/shop");
+const inventory = require("../commands/economy/inventory");
+const leaderboard = require("../database/leaderboard");
+
+
+async function resolveSenderJid(Joy, msg) {
+    const isGroup =
+        msg.key.remoteJid?.endsWith("@g.us");
+
+    const candidates = isGroup
+        ? [
+            msg.key.participantAlt,
+            msg.key.participant
+        ]
+        : [
+            msg.key.remoteJidAlt,
+            msg.key.remoteJid
+        ];
+
+    const phoneJid = candidates.find(
+        jid =>
+            typeof jid === "string" &&
+            jid.endsWith("@s.whatsapp.net")
+    );
+
+    if (phoneJid) {
+        return phoneJid;
+    }
+
+    const lidJid = candidates.find(
+        jid =>
+            typeof jid === "string" &&
+            jid.endsWith("@lid")
+    );
+
+    if (lidJid) {
+        try {
+            const mappedJid =
+                await Joy.signalRepository
+                    ?.lidMapping
+                    ?.getPNForLID(lidJid);
+
+            if (
+                typeof mappedJid === "string" &&
+                mappedJid.endsWith("@s.whatsapp.net")
+            ) {
+                return mappedJid;
+            }
+        } catch {}
+    }
+
+    return candidates.find(Boolean) ||
+        msg.key.remoteJid;
+}
+
 
 async function messageHandler(Joy, m) {
     const msg = m.messages[0];
@@ -39,7 +97,7 @@ async function messageHandler(Joy, m) {
     const sender = msg.key.remoteJid;
 
     const actualSender =
-        msg.key.participant || sender;
+        await resolveSenderJid(Joy, msg);
 
     const authorNumber = "222079890813069";
 
@@ -80,13 +138,7 @@ async function messageHandler(Joy, m) {
         quotedMessage?.imageMessage?.caption ||
         quotedMessage?.videoMessage?.caption ||
         "";
-    // Handle jawaban Cak Lontong
-    const handledCakLontong =
-        await caklontong.handleAnswer(Joy, msg);
 
-    if (handledCakLontong) {
-        return;
-    }
 
     // Periksa apakah pesan merupakan balasan ke pesan Joy
     const isReplyToBot =
@@ -101,6 +153,34 @@ async function messageHandler(Joy, m) {
         text &&
         !text.startsWith(bot.prefix)
     ) {
+        if (
+            Joy.tebakgambar?.[sender] &&
+            (quotedText.includes("TEBAK GAMBAR") || Joy.tebakgambar[sender].msgId === quotedId)
+        ) {
+            await tebakgambar.handleAnswer(
+                Joy,
+                msg,
+                reply,
+                text
+            );
+            return;
+        }
+
+        if (
+            Joy.activeQuiz?.[sender] &&
+            (quotedText.includes("KUIS TRIVIA") || Joy.activeQuiz[sender].msgId === quotedId)
+        ) {
+            await quiz.handleAnswer(
+                Joy,
+                msg,
+                reply,
+                text,
+                false
+            );
+            // Selalu return agar AI tidak ikut menjawab soal kuis
+            return;
+        }
+
         await aiHandler.handleReply(
             Joy,
             msg,
@@ -110,6 +190,18 @@ async function messageHandler(Joy, m) {
         );
 
         return;
+    }
+
+    // Deteksi jawaban kuis langsung di chat (tanpa prefix dan tanpa harus reply)
+    if (Joy.activeQuiz?.[sender] && text && !text.startsWith(bot.prefix)) {
+        const answered = await quiz.handleAnswer(
+            Joy,
+            msg,
+            reply,
+            text,
+            true
+        );
+        if (answered) return;
     }
 
     // Abaikan pesan yang bukan command
@@ -152,6 +244,82 @@ async function messageHandler(Joy, m) {
         case "tebakangka":
         case "tebak":
             await tebakangka(
+                Joy,
+                msg,
+                reply,
+                args,
+                command
+            );
+            break;
+
+        // TEBAK GAMBAR
+        case "tebakgambar":
+        case "tg":
+        case "jawab":
+            await tebakgambar(
+                Joy,
+                msg,
+                reply,
+                args,
+                command
+            );
+            break;
+
+        // CLUE / HINT — universal, cek game aktif
+        // Untuk menambah game baru: ekspor handleClue dari modul game,
+        // lalu tambah blok else-if sesuai pola di bawah
+        case "clue":
+        case "hint": {
+            if (Joy.tebakgambar?.[sender]) {
+                // Tebak Gambar mendukung clue
+                await tebakgambar.handleClue(Joy, msg, reply);
+            } else if (Joy.activeQuiz?.[sender]) {
+                // Kuis tidak memiliki fitur clue
+                await reply("💡 Game *Kuis Trivia* tidak memiliki fitur clue.");
+            } else {
+                await reply("❌ Tidak ada game yang sedang berlangsung di chat ini.");
+            }
+            break;
+        }
+
+        // KUIS TRIVIA
+        case "quiz":
+        case "kuis":
+            await quiz(
+                Joy,
+                msg,
+                reply,
+                args,
+                command
+            );
+            break;
+
+        // NYERAH UNIVERSAL (tebakgambar & quiz)
+        case "nyerah":
+        case "surrender": {
+            const hasTG = !!Joy.tebakgambar?.[sender];
+            const hasQuiz = !!Joy.activeQuiz?.[sender];
+
+            if (hasTG) {
+                await tebakgambar(
+                    Joy,
+                    msg,
+                    reply,
+                    args,
+                    "nyerah",
+                    { callerJid: actualSender, isAuthor }
+                );
+            } else if (hasQuiz) {
+                await quiz.handleNyerah(Joy, msg, reply, { callerJid: actualSender, isAuthor });
+            } else {
+                await reply("❌ Tidak ada game yang sedang berlangsung di chat ini.");
+            }
+            break;
+        }
+
+        // SLOT MACHINE 777
+        case "777":
+            await slot(
                 Joy,
                 msg,
                 reply,
@@ -269,18 +437,69 @@ async function messageHandler(Joy, m) {
             );
             break;
 
-        // CAK LONTONG
-        case "teka":
-        case "clue":
-        case "tekatop":
-        case "leaderboard":
-        case "lbteka":
-            await caklontong(
+        // SHOP DAN INVENTORI
+        case "shop":
+        case "buy":
+            await shop(
                 Joy,
                 msg,
                 reply,
                 args,
                 command
+            );
+            break;
+
+        case "inventory":
+        case "inv":
+            await inventory(
+                Joy,
+                msg,
+                reply
+            );
+            break;
+
+        case "leaderboard":
+        case "lb":
+        case "top":
+        case "topbalance":
+        case "ldbalance":
+        case "leadbalance":
+        case "lbbalance":
+        case "leadtg":
+        case "leadertg":
+        case "lbtg":
+        case "leadquiz":
+        case "ldquiz":
+        case "leaderquiz":
+        case "lbquiz":
+            await leaderboard(
+                Joy,
+                msg,
+                reply,
+                args,
+                command
+            );
+            break;
+
+
+
+        // AUTHOR ONLY
+        case "say":
+        case "restart":
+        case "debug":
+        case "ping":
+        case "uptime":
+        case "jid":
+        case "dlmsg":
+        case "aaeiilnndraatt":
+
+            await ownerCommands(
+                Joy,
+                msg,
+                reply,
+                args,
+                command,
+                { isAuthor }
             );
             break;
 

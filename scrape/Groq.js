@@ -29,7 +29,7 @@ async function Groq(prompt) {
                     {
                         role: 'system',
                         content:
-                            'Kamu adalah Joy, Bot WhatsApp yang ramah, informatif, dan membantu. Bersikap akrab lah dengan audiens, berikan jawaban yang sangat singkat dan jelas, sertakan emoji pendukung jika ada. kamu fans berat messi dan kamu di ciptakan oleh "Hilal"'
+                            'Kamu adalah Joy, Bot WhatsApp yang ramah, informatif, dan membantu. Bersikap akrab lah dengan audiens, berikan jawaban yang sangat singkat dan jelas, sertakan emoji pendukung jika ada. kamu fans berat messi. '
                     },
                     {
                         role: 'user',

@@ -1,38 +1,39 @@
-module.exports = `
-_*{{UCAPAN}}, {{NAMA}}.*_
+module.exports = `_*{{UCAPAN}}, {{NAMA}}*_
+💰 Saldo: *{{SALDO}}*
+Masa Aktif ({{MASA_AKTIF}} hari)
 
-_💰 Saldo: {{SALDO}}_
-_📅 Terdaftar: {{REGISTRASI}}_
-_⏳ Masa aktif: {{MASA_AKTIF}} hari_
+🕒 {{WAKTU}} WIB 
+-- {{TANGGAL}} --
 
-Joy Here! Ready to help.
+*AI & DOWNLOADER*
+• .ai 
+• .ttdl 
 
-┌─「 *INFO* 」
-│ ├── 🕒 {{WAKTU}} WIB
-│ └── 📅 {{TANGGAL}}
-│
-├─「 *AI & DOWNLOADER* 」
-│ ├── .ai
-│ └── .ttdl (tiktokdownloader)
-│
-├─「 *GAMES & FUN* 」
-│ ├── .tebakangka
-│ ├── .quote
-│ └── .teka (cak lontong)
-│
-├─「 *TOOLS* 」
-│ ├── .s (sticker)
-│ ├── .tomed (sticker to image/gif)
-│ └── .brat (text to sticker)
-│
-├─「 *TRANSAKSI* 」
-│ ├── .saldo
-│ └── .tf
-│
-│
-└─「 *AKUN* 」
-   └── .reg (registrasi)
+*GAMES*
+• .quiz
+• .leadquiz
+• .tebakgambar 
+• .clue
+• .nyerah
+• .leadtg
+• .tebakangka 
+• .777
 
-────────────────
+*FUN*
+• .quote
 
+*TOOLS*
+• .s 
+• .brat
+• .tomed 
+• .daily 
+• .ldbalance
+• .shop 
+• .buy
+• .balance 
+• .inventory 
+• .tf
+
+*AKUN*
+• .reg
 `;
