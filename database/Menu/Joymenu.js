@@ -7,12 +7,12 @@ Masa Aktif ({{MASA_AKTIF}} hari)
 
 *AI & DOWNLOADER*
 • .ai 
-• .ttdl 
 
 *GAMES*
 • .quiz
 • .leadquiz
 • .tebakgambar 
+• .tebaklogo
 • .clue
 • .nyerah
 • .leadtg

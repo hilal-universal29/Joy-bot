@@ -13,7 +13,7 @@ module.exports = async (
 
     if (!quotedId) {
         return reply(
-            "Balas pesan yang ingin dihapus, lalu ketik .dlmsg"
+            "Balas pesan yang ingin dihapus"
         );
     }
 

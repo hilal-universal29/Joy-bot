@@ -1,5 +1,10 @@
 
-const Joymenu = require("../../database/Menu/Joymenu");
+const mainmenu = require("../../database/Menu/mainmenu");
+const gamesmenu = require("../../database/Menu/gamesmenu");
+const toolsmenu = require("../../database/Menu/toolsmenu");
+const downloadermenu = require("../../database/Menu/downloadermenu");
+const funmenu = require("../../database/Menu/funmenu");
+const accountmenu = require("../../database/Menu/accountmenu");
 
 const {
     getUser,
@@ -7,18 +12,20 @@ const {
     formatRupiah
 } = require("../../database/users");
 
-module.exports = async (Joy, msg, reply) => {
-    const jid = msg.key.participant || msg.key.remoteJid;
-    const user = getUser(jid);
+const MENUS = {
+    menu: mainmenu,
+    mainmenu,
+    gamesmenu,
+    toolsmenu,
+    downloadermenu,
+    funmenu,
+    accountmenu
+};
 
-    if (!user) {
-        await reply(
-            "Kamu belum terdaftar di Joy.\n\n" +
-            "Ketik *.reg* terlebih dahulu untuk membuat akun."
-        );
-        return;
-    }
+// Hanya menu utama yang menampilkan informasi pengguna.
+const USER_INFO_MENUS = new Set(["menu", "mainmenu"]);
 
+function buildUserInfo(template, user) {
     const sekarang = new Date();
 
     const jamWIB = Number(
@@ -63,7 +70,7 @@ module.exports = async (Joy, msg, reply) => {
             year: "numeric"
         });
 
-    const menu = Joymenu
+    return template
         .replace("{{UCAPAN}}", ucapan)
         .replace("{{WAKTU}}", waktu)
         .replace("{{TANGGAL}}", tanggal)
@@ -71,10 +78,37 @@ module.exports = async (Joy, msg, reply) => {
         .replace("{{SALDO}}", formatRupiah(user.balance))
         .replace("{{REGISTRASI}}", registrasi)
         .replace("{{MASA_AKTIF}}", String(getActiveDays(user.registeredAt)));
+}
+
+module.exports = async (Joy, msg, reply, command = "menu") => {
+    const key = MENUS[command] ? command : "menu";
+    const template = MENUS[key];
+
+    if (USER_INFO_MENUS.has(key)) {
+        const jid = msg.key.participant || msg.key.remoteJid;
+        const user = getUser(jid);
+
+        if (!user) {
+            await reply(
+                "Kamu belum terdaftar di Joy.\n\n" +
+                "Ketik *.reg* terlebih dahulu untuk membuat akun."
+            );
+            return;
+        }
+
+        const menu = buildUserInfo(template, user);
+
+        await Joy.sendMessage(
+            msg.key.remoteJid,
+            { text: menu },
+            { quoted: msg }
+        );
+        return;
+    }
 
     await Joy.sendMessage(
         msg.key.remoteJid,
-        { text: menu },
+        { text: template },
         { quoted: msg }
     );
 };

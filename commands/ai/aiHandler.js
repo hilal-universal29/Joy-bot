@@ -28,7 +28,7 @@ async function handleCommand(
             '*Contoh:* .ai Kenapa Messi disebut GOAT?'
         );
     }
-
+ 
     try {
         const answer = await askAI(question);
 

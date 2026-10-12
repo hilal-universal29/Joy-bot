@@ -12,12 +12,12 @@ const aiHandler = require("../commands/ai/aiHandler");
 const quote = require("../commands/games/quote");
 const tebakangka = require("../commands/games/tebakangka");
 const tebakgambar = require("../commands/games/tebakgambar");
+const tebaklogo = require("../commands/games/tebaklogo");
 const quiz = require("../commands/games/quiz");
 const slot = require("../commands/games/slot");
 const sticker = require("../commands/media/sticker");
 const tomed = require("../commands/media/tomed");
 const brat = require("../commands/media/brat");
-const ttdl = require("../commands/media/ttdl");
 const shop = require("../commands/economy/shop");
 const inventory = require("../commands/economy/inventory");
 const leaderboard = require("../database/leaderboard");
@@ -167,6 +167,19 @@ async function messageHandler(Joy, m) {
         }
 
         if (
+            Joy.tebaklogo?.[sender] &&
+            (quotedText.includes("TEBAK LOGO") || Joy.tebaklogo[sender].msgId === quotedId)
+        ) {
+            await tebaklogo.handleAnswer(
+                Joy,
+                msg,
+                reply,
+                text
+            );
+            return;
+        }
+
+        if (
             Joy.activeQuiz?.[sender] &&
             (quotedText.includes("KUIS TRIVIA") || Joy.activeQuiz[sender].msgId === quotedId)
         ) {
@@ -190,6 +203,18 @@ async function messageHandler(Joy, m) {
         );
 
         return;
+    }
+
+    // Deteksi jawaban Tebak Logo langsung di chat (tanpa prefix dan tanpa harus reply)
+    if (Joy.tebaklogo?.[sender] && text && !text.startsWith(bot.prefix)) {
+        const answered = await tebaklogo.handleAnswer(
+            Joy,
+            msg,
+            reply,
+            text,
+            true
+        );
+        if (answered) return;
     }
 
     // Deteksi jawaban kuis langsung di chat (tanpa prefix dan tanpa harus reply)
@@ -265,6 +290,18 @@ async function messageHandler(Joy, m) {
             );
             break;
 
+        // TEBAK LOGO
+        case "tebaklogo":
+        case "tl":
+            await tebaklogo(
+                Joy,
+                msg,
+                reply,
+                args,
+                command
+            );
+            break;
+
         // CLUE / HINT — universal, cek game aktif
         // Untuk menambah game baru: ekspor handleClue dari modul game,
         // lalu tambah blok else-if sesuai pola di bawah
@@ -273,6 +310,9 @@ async function messageHandler(Joy, m) {
             if (Joy.tebakgambar?.[sender]) {
                 // Tebak Gambar mendukung clue
                 await tebakgambar.handleClue(Joy, msg, reply);
+            } else if (Joy.tebaklogo?.[sender]) {
+                // Tebak Logo tidak memiliki fitur clue
+                await reply("💡 Game *Tebak Logo* tidak memiliki fitur clue.");
             } else if (Joy.activeQuiz?.[sender]) {
                 // Kuis tidak memiliki fitur clue
                 await reply("💡 Game *Kuis Trivia* tidak memiliki fitur clue.");
@@ -298,6 +338,7 @@ async function messageHandler(Joy, m) {
         case "nyerah":
         case "surrender": {
             const hasTG = !!Joy.tebakgambar?.[sender];
+            const hasTL = !!Joy.tebaklogo?.[sender];
             const hasQuiz = !!Joy.activeQuiz?.[sender];
 
             if (hasTG) {
@@ -309,6 +350,8 @@ async function messageHandler(Joy, m) {
                     "nyerah",
                     { callerJid: actualSender, isAuthor }
                 );
+            } else if (hasTL) {
+                await tebaklogo.handleNyerah(Joy, msg, reply, { callerJid: actualSender, isAuthor });
             } else if (hasQuiz) {
                 await quiz.handleNyerah(Joy, msg, reply, { callerJid: actualSender, isAuthor });
             } else {
@@ -366,10 +409,17 @@ async function messageHandler(Joy, m) {
 
         // MENU
         case "menu":
+        case "mainmenu":
+        case "gamesmenu":
+        case "toolsmenu":
+        case "downloadermenu":
+        case "funmenu":
+        case "accountmenu":
             await menu(
                 Joy,
                 msg,
-                reply
+                reply,
+                command
             );
             break;
 
@@ -420,16 +470,6 @@ async function messageHandler(Joy, m) {
         // BRAT
         case "brat":
             await brat(
-                Joy,
-                msg,
-                reply,
-                args
-            );
-            break;
-
-        // TIKTOK DOWNLOADER
-        case "ttdl":
-            await ttdl(
                 Joy,
                 msg,
                 reply,

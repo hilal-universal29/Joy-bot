@@ -156,7 +156,7 @@ function buildInvalidBet() {
         .join("\n");
 
     return (
-        "❌ *Nominal taruhan tidak valid.*\n\n" 
+        "❌ *Nominal taruhan tidak valid.*" 
     );
 }
 
