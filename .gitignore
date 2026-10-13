@@ -43,6 +43,7 @@ sessions/
 
 # Data runtime
 database/users.json
+database/activity.json
 utils/tokenStats.json
 
 # File sementara

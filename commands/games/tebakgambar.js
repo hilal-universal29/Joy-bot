@@ -194,7 +194,7 @@ async function handleAnswer(Joy, msg, reply, answerText) {
         const user = getUser(playerJid);
         const playerName = user?.name || "Kamu";
 
-        const totalWins = recordTebakGambarWin(playerJid);
+        const totalWins = recordTebakGambarWin(playerJid, sender);
         const balRes = adjustBalance(playerJid, game.reward);
         let rewardText = `\n💰 Reward: *${formatRupiah(game.reward)}*`;
 

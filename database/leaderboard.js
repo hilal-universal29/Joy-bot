@@ -1,9 +1,13 @@
 const {
     getTopUsersByBalance,
     getTopUsersByTG,
+    getUserTGRank,
     getTopUsersByQuiz,
     getUserRankByField,
     getUserQuizRank,
+    getTopUsersByQumath,
+    getUserQumathRank,
+    normalizeQumathMode,
     getUser,
     formatRupiah
 } = require("./users");
@@ -11,6 +15,7 @@ const {
 module.exports = async (Joy, msg, reply, args = [], command = "ldbalance") => {
     const senderJid = msg.key.participant || msg.key.remoteJid;
     const isGroup = msg.key.remoteJid?.endsWith("@g.us");
+    const chatId = msg.key.remoteJid;
 
     // Daftar ID bot / sistem yang tidak boleh masuk ke leaderboard manapun
     const excludeIds = new Set(["255989211242546"]);
@@ -60,6 +65,23 @@ module.exports = async (Joy, msg, reply, args = [], command = "ldbalance") => {
         cmd === "lbquiz" ||
         (cmd === "leaderboard" && args[0] === "quiz");
 
+    const isQumath =
+        cmd === "leadqumath" ||
+        cmd === "ldqumath" ||
+        cmd === "leaderqumath" ||
+        cmd === "lbqumath" ||
+        cmd === "leadmath" ||
+        cmd === "leadkumath" ||
+        cmd === "leadqmath" ||
+        (cmd === "leaderboard" &&
+            (args[0] === "qumath" || args[0] === "math" || args[0] === "qmath" || args[0] === "kumath"));
+
+    const qumathMode = isQumath
+        ? normalizeQumathMode(
+            cmd === "leaderboard" ? args[1] : args[0]
+        )
+        : null;
+
     const medals = ["🥇", "🥈", "🥉"];
     const user = getUser(senderJid);
 
@@ -67,9 +89,12 @@ module.exports = async (Joy, msg, reply, args = [], command = "ldbalance") => {
     // 1. LEADERBOARD TEBAK GAMBAR (.leadtg)
     // ====================================================================
     if (isTG) {
-        // Ambil top 10 pemenang tebak gambar terbanyak (Joybot dikecualikan)
-        const topUsers = getTopUsersByTG(memberIds, 10, excludeIds);
-        const userRank = getUserRankByField(senderJid, "tebakGambarWins", memberIds, excludeIds);
+        // Ambil top 10 pemenang tebak gambar terbanyak (Joybot dikecualikan).
+        // Pemain tanpa skor tidak dipajang di leaderboard.
+        const topUsers = getTopUsersByTG(chatId, memberIds, 10, excludeIds)
+            .filter(u => (Number(u.tebakGambarWins) || 0) > 0);
+        const userRank = getUserTGRank(senderJid, chatId, memberIds, excludeIds);
+        const userScore = userRank?.score || 0;
 
         if (!topUsers || topUsers.length === 0) {
             return reply(
@@ -85,17 +110,18 @@ module.exports = async (Joy, msg, reply, args = [], command = "ldbalance") => {
 
         topUsers.forEach((u, index) => {
             const medal = medals[index] || `${index + 1}.`;
-            text += `${medal} *${u.name}*\n`;
-            text += `   └ Menang: *${u.tebakGambarWins || 0}x*\n`;
+            text += `${medal} ${u.name} ${u.tebakGambarWins || 0}x\n`;
         });
 
         text += "\n────────────────\n";
-        if (user && userRank) {
+        if (!user) {
+            text += "ℹ️ Anda belum terdaftar. Ketik *.reg* untuk bergabung!";
+        } else if (userRank && userScore > 0) {
             const scope = isGroup ? "anggota grup terdaftar" : "pengguna";
             text += `📌 *Peringkat Anda:* #${userRank.rank} dari ${userRank.total} ${scope}\n`;
-            text += `🎯 *Total Menang:* ${Number(user.tebakGambarWins) || 0} kali`;
+            text += `🎯 *Total Menang:* ${userScore} kali`;
         } else {
-            text += "ℹ️ Anda belum terdaftar. Ketik *.reg* untuk bergabung!";
+            text += "ℹ️ Kamu belum memiliki skor Tebak Gambar. Mainkan dengan *.tebakgambar*!";
         }
 
         return reply(text);
@@ -114,8 +140,10 @@ module.exports = async (Joy, msg, reply, args = [], command = "ldbalance") => {
         }
 
         const groupId = msg.key.remoteJid;
-        // Ambil pemenang kuis khusus di grup ini saja (tidak digabung dengan grup lain)
-        const topUsers = getTopUsersByQuiz(groupId, memberIds, 10, excludeIds);
+        // Ambil pemenang kuis khusus di grup ini saja (tidak digabung dengan grup lain).
+        // Pemain tanpa skor tidak dipajang di leaderboard.
+        const topUsers = getTopUsersByQuiz(groupId, memberIds, 10, excludeIds)
+            .filter(u => (Number(u.quizScore) || 0) > 0);
         const userRank = getUserQuizRank(senderJid, groupId, memberIds, excludeIds);
 
         if (!topUsers || topUsers.length === 0) {
@@ -131,23 +159,90 @@ module.exports = async (Joy, msg, reply, args = [], command = "ldbalance") => {
 
         topUsers.forEach((u, index) => {
             const medal = medals[index] || `${index + 1}.`;
-            text += `${medal} *${u.name}*\n`;
-            text += `   └ Skor Kuis: *${u.quizScore || 0} Menang*\n`;
+            text += `${medal} ${u.name} ${u.quizScore || 0}x\n`;
         });
 
         text += "\n────────────────\n";
-        if (user && userRank) {
-            text += `📌 *Peringkat Anda:* #${userRank.rank} dari ${userRank.total} anggota terdaftar\n`;
-            text += `🎯 *Skor Anda di grup ini:* ${userRank.score || 0} kali menang`;
-        } else {
+        if (!user) {
             text += "ℹ️ Anda belum terdaftar. Ketik *.reg* untuk bergabung!";
+        } else if (userRank && (userRank.score || 0) > 0) {
+            text += `📌 *Peringkat Anda:* #${userRank.rank} dari ${userRank.total} anggota terdaftar\n`;
+            text += `🎯 *Skor Anda di grup ini:* ${userRank.score} kali menang`;
+        } else {
+            text += "ℹ️ Kamu belum memiliki skor kuis di grup ini. Mainkan dengan *.quiz*!";
         }
 
         return reply(text);
     }
 
     // ====================================================================
-    // 3. LEADERBOARD SALDO (.ldbalance)
+    // 3. LEADERBOARD KUIS MATEMATIKA PER MODE (.leadqumath e/m/h)
+    // ====================================================================
+    else if (isQumath) {
+        const modeLabels = {
+            easy: "EASY",
+            medium: "MEDIUM",
+            hard: "HARD",
+            expert: "EXPERT",
+            master: "MASTER",
+            insane: "INSANE"
+        };
+
+        if (!qumathMode) {
+            return reply(
+                "📌 *LEADERBOARD KUIS MATEMATIKA*\n\n" +
+                "Pilih mode yang ingin dilihat:\n" +
+                "• *.leadqumath e* — Easy\n" +
+                "• *.leadqumath m* — Medium\n" +
+                "• *.leadqumath h* — Hard\n" +
+                "• *.leadqumath ex* — Expert\n" +
+                "• *.leadqumath ma* — Master\n" +
+                "• *.leadqumath in* — Insane\n\n" +
+                "Contoh: *.leadqumath ex*"
+            );
+        }
+
+        // Pemain tanpa skor tidak dipajang di leaderboard
+        const topUsers = getTopUsersByQumath(qumathMode, chatId, memberIds, 10, excludeIds)
+            .filter(u => (Number(u.qumathScore) || 0) > 0);
+        const userRank = getUserQumathRank(senderJid, qumathMode, chatId, memberIds, excludeIds);
+        const modeLabel = modeLabels[qumathMode] || qumathMode.toUpperCase();
+
+        if (!topUsers || topUsers.length === 0) {
+            return reply(
+                isGroup
+                    ? `Belum ada anggota di grup ini yang memiliki skor Kuis Matematika mode *${modeLabel}*.\n` +
+                      "Mainkan dengan *.qumath " + qumathMode[0] + "*!"
+                    : `Belum ada data pemain Kuis Matematika mode *${modeLabel}*.`
+            );
+        }
+
+        let text = isGroup
+            ? `*LEADERBOARD QUMATH ${modeLabel}*\n_${groupName}_\n\n`
+            : `*LEADERBOARD QUMATH ${modeLabel}*\n\n`;
+
+        topUsers.forEach((u, index) => {
+            const medal = medals[index] || `${index + 1}.`;
+            text += `${medal} ${u.name} ${u.qumathScore || 0}x\n`;
+        });
+
+        text += "\n\n";
+        if (!user) {
+            text += "Anda belum terdaftar. Ketik *.reg* untuk bergabung!";
+        } else if (userRank && (userRank.score || 0) > 0) {
+            const scope = isGroup ? "anggota grup terdaftar" : "pengguna";
+            text += `Peringkat Anda: #${userRank.rank} dari ${userRank.total} ${scope}\n`;
+            text += `Total Menang (${modeLabel}): ${userRank.score}x`;
+        } else {
+            const prefix = qumathMode === "expert" ? "ex" : qumathMode === "master" ? "ma" : qumathMode === "insane" ? "in" : qumathMode[0];
+            text += `Kamu belum memiliki skor Kuis Matematika mode ${modeLabel}. Mainkan dengan *.qumath ${prefix}*!`;
+        }
+
+        return reply(text);
+    }
+
+    // ====================================================================
+    // 4. LEADERBOARD SALDO (.ldbalance)
     // ====================================================================
     else {
         // Ambil top 10 pengguna dengan saldo terbanyak (Joybot dikecualikan)
@@ -168,8 +263,7 @@ module.exports = async (Joy, msg, reply, args = [], command = "ldbalance") => {
 
         topUsers.forEach((u, index) => {
             const medal = medals[index] || `${index + 1}.`;
-            text += `${medal} *${u.name}*\n`;
-            text += `   └ Saldo: *${formatRupiah(u.balance)}*\n`;
+            text += `${medal} ${u.name} ${formatRupiah(u.balance)}\n`;
         });
 
         text += "\n────────────────\n";

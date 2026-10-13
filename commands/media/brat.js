@@ -1,174 +1,82 @@
-const sharp = require("sharp");
 
-function escapeXml(text) {
-    return text
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&apos;");
-}
-
-function calculateBratFontSize(text) {
-    const maxWidth = 440;
-    const maxLines = 8;
-
-    let fontSize = 72;
-
-    while (fontSize >= 24) {
-        const charWidth = fontSize * 0.55;
-        const maxChars = Math.floor(maxWidth / charWidth);
-
-        const lines = [];
-
-        for (let i = 0; i < text.length; i += maxChars) {
-            lines.push(text.slice(i, i + maxChars));
-        }
-
-        if (lines.length <= maxLines) {
-            return {
-                fontSize,
-                lines,
-                lineHeight: fontSize * 0.95
-            };
-        }
-
-        fontSize -= 4;
-    }
-
-    const charWidth = 24 * 0.55;
-    const maxChars = Math.floor(maxWidth / charWidth);
-
-    const lines = [];
-
-    for (let i = 0; i < text.length; i += maxChars) {
-        lines.push(text.slice(i, i + maxChars));
-    }
-
-    return {
-        fontSize: 24,
-        lines,
-        lineHeight: 24 * 0.95
-    };
-}
+const axios = require('axios');
+const sharp = require('sharp');
+const API_URL = 'https://ikhlasapi.web.id/api/maker/brat';
 
 module.exports = async (Joy, msg, reply, args) => {
-    const sender = msg.key.remoteJid;
-    const q = args.join(" ").trim();
+    const chat = msg.key.remoteJid;
+    const animated = /^a$/i.test(args[0] || '');
+    const text = (animated ? args.slice(1) : args).join(' ').trim();
 
-    if (!q) {
+    if (!text) {
         return reply(
-            "⚠️ *Contoh:* .brat halo dunia"
+            'Masukkan teks yang ingin dibuat!\n\n' +
+            'Contoh:\n' +
+            '.brat hello world\n' +
+            '.brat a hello world'
         );
+    }
+
+    if (text.length > 800) {
+        return reply('Teks maksimal 800 karakter.');
     }
 
     try {
-        const teks = escapeXml(
-            q
-                .trim()
-                .replace(/\s+/g, " ")
-                .toLowerCase()
-        );
-
-        const {
-            fontSize,
-            lines,
-            lineHeight
-        } = calculateBratFontSize(teks);
-
-        const totalHeight =
-            lines.length * lineHeight;
-
-        const startY =
-            (512 - totalHeight) / 2 +
-            fontSize * 0.78;
-
-        const tspans = lines
-            .map((line, index) => {
-                const y =
-                    startY +
-                    index * lineHeight;
-
-                return `
-                    <tspan
-                        x="256"
-                        y="${y}"
-                    >${line}</tspan>
-                `;
-            })
-            .join("");
-
-        const svg = `
-            <svg
-                width="512"
-                height="512"
-                viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <defs>
-                    <filter
-                        id="bratBlur"
-                        x="-20%"
-                        y="-20%"
-                        width="140%"
-                        height="140%"
-                    >
-                        <feGaussianBlur
-                            stdDeviation="1.15"
-                        />
-                    </filter>
-                </defs>
-
-                <rect
-                    width="512"
-                    height="512"
-                    fill="#ffffff"
-                />
-
-                <text
-                    x="256"
-                    font-family="Arial Narrow, Arial, Helvetica, sans-serif"
-                    font-size="${fontSize}px"
-                    font-weight="400"
-                    letter-spacing="-1.5px"
-                    text-anchor="middle"
-                    fill="#000000"
-                    filter="url(#bratBlur)"
-                >
-                    ${tspans}
-                </text>
-            </svg>
-        `;
-
-        const stickerBuffer = await sharp(
-            Buffer.from(svg)
-        )
-            .resize(512, 512, {
-                fit: "fill"
-            })
-            .webp({
-                quality: 95
-            })
-            .toBuffer();
-
-        await Joy.sendMessage(
-            sender,
-            {
-                sticker: stickerBuffer
+        await axios.get(API_URL, {
+            params: {
+                text,
+                isAnimated: animated,
+                delay: 500
             },
-            {
-                quoted: msg
+            responseType: 'arraybuffer',
+            headers: {
+                Accept: 'image/png, image/jpeg, image/gif'
+            },
+            timeout: 60000,
+            maxContentLength: 15 * 1024 * 1024
+        }).then(async response => {
+            const buffer = Buffer.from(response.data);
+            const mime = response.headers['content-type'] || '';
+
+            if (!mime.startsWith('image/')) {
+                throw new Error(
+                    `Respons API bukan gambar: ${mime}`
+                );
             }
-        );
+
+            const stickerBuffer = await sharp(
+                buffer,
+                animated ? { animated: true } : {}
+            )
+                .resize(512, 512, {
+                    fit: 'contain',
+                    background: {
+                        r: 0,
+                        g: 0,
+                        b: 0,
+                        alpha: 0
+                    }
+                })
+                .webp({
+                    effort: 5,
+                    ...(animated ? { loop: 0 } : {})
+                })
+                .toBuffer();
+
+            await Joy.sendMessage(chat, {
+                sticker: stickerBuffer
+            }, { quoted: msg });
+        });
 
     } catch (error) {
-        console.error(
-            "Error Brat Generator:",
-            error
-        );
+        console.error('[BRAT ERROR]', {
+            message: error.message,
+            status: error.response?.status,
+            code: error.code
+        });
 
         await reply(
-            "⚠️ *Gagal membuat sticker BRAT.*"
+            'Gagal membuat Brat. Coba lagi nanti.'
         );
     }
 };

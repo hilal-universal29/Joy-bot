@@ -33,6 +33,12 @@ function getUserId(jid) {
     return id || null;
 }
 
+// Kunci skor per grup. Chat pribadi (bukan @g.us) dihitung sebagai "global".
+function toGroupKey(groupId) {
+    const key = String(groupId || "");
+    return key.endsWith("@g.us") ? key : "global";
+}
+
 function getUser(jid) {
     const id = getUserId(jid);
 
@@ -429,7 +435,21 @@ function consumeItem(jid, itemId, quantity = 1) {
     };
 }
 
-function recordTebakGambarWin(jid) {
+// Skor Tebak Gambar per grup. Format lama (number) hanya berlaku untuk "global".
+function readTebakGambarScore(user, groupKey) {
+    const data = user?.tebakGambarWins;
+
+    if (data && typeof data === "object" && !Array.isArray(data)) {
+        return Number(data[groupKey]) || 0;
+    }
+
+    // Format lama: angka global
+    if (groupKey === "global") return Number(data) || 0;
+
+    return 0;
+}
+
+function recordTebakGambarWin(jid, groupId) {
     const id = getUserId(jid);
 
     if (!id) return false;
@@ -438,10 +458,24 @@ function recordTebakGambarWin(jid) {
 
     if (!users[id]) return false;
 
-    users[id].tebakGambarWins = (Number(users[id].tebakGambarWins) || 0) + 1;
+    if (
+        !users[id].tebakGambarWins ||
+        typeof users[id].tebakGambarWins !== "object" ||
+        Array.isArray(users[id].tebakGambarWins)
+    ) {
+        // Migrasi dari format lama (number) ke per grup
+        const legacy = Number(users[id].tebakGambarWins) || 0;
+        users[id].tebakGambarWins = {};
+        if (legacy > 0) users[id].tebakGambarWins.global = legacy;
+    }
+
+    const groupKey = toGroupKey(groupId);
+    const newScore = (Number(users[id].tebakGambarWins[groupKey]) || 0) + 1;
+    users[id].tebakGambarWins[groupKey] = newScore;
+
     writeUsers(users);
 
-    return users[id].tebakGambarWins;
+    return newScore;
 }
 
 function getTopUsersByBalance(memberIds = null, limit = 10, excludeIds = null) {
@@ -461,14 +495,15 @@ function getTopUsersByBalance(memberIds = null, limit = 10, excludeIds = null) {
             id: u.id,
             name: u.name || "Pengguna",
             balance: Number(u.balance) || 0,
-            tebakGambarWins: Number(u.tebakGambarWins) || 0,
+            tebakGambarWins: readTebakGambarScore(u, "global"),
             registeredAt: u.registeredAt
         }))
         .sort((a, b) => b.balance - a.balance)
         .slice(0, limit);
 }
 
-function getTopUsersByTG(memberIds = null, limit = 10, excludeIds = null) {
+function getTopUsersByTG(groupId, memberIds = null, limit = 10, excludeIds = null) {
+    const groupKey = toGroupKey(groupId);
     const users = readUsers();
     let list = Object.values(users);
 
@@ -485,11 +520,46 @@ function getTopUsersByTG(memberIds = null, limit = 10, excludeIds = null) {
             id: u.id,
             name: u.name || "Pengguna",
             balance: Number(u.balance) || 0,
-            tebakGambarWins: Number(u.tebakGambarWins) || 0,
+            tebakGambarWins: readTebakGambarScore(u, groupKey),
             registeredAt: u.registeredAt
         }))
         .sort((a, b) => b.tebakGambarWins - a.tebakGambarWins)
         .slice(0, limit);
+}
+
+function getUserTGRank(jid, groupId, memberIds = null, excludeIds = null) {
+    const id = getUserId(jid);
+
+    if (!id) return null;
+
+    const groupKey = toGroupKey(groupId);
+    const users = readUsers();
+    let list = Object.values(users);
+
+    if (memberIds && memberIds instanceof Set) {
+        list = list.filter(u => memberIds.has(u.id));
+    }
+
+    if (excludeIds && excludeIds instanceof Set) {
+        list = list.filter(u => !excludeIds.has(u.id));
+    }
+
+    const sorted = list
+        .map(u => ({
+            id: u.id,
+            score: readTebakGambarScore(u, groupKey)
+        }))
+        .sort((a, b) => b.score - a.score);
+
+    const index = sorted.findIndex(u => u.id === id);
+
+    if (index === -1) return null;
+
+    return {
+        rank: index + 1,
+        total: sorted.length,
+        score: sorted[index].score
+    };
 }
 
 function getUserRankByField(jid, field = "balance", memberIds = null, excludeIds = null) {
@@ -617,6 +687,160 @@ function getUserQuizRank(jid, groupId, memberIds = null, excludeIds = null) {
     };
 }
 
+function normalizeQumathMode(mode) {
+    const value = String(mode || "").toLowerCase().trim();
+
+    if (["e", "easy", "mudah"].includes(value)) return "easy";
+    if (["m", "medium", "med", "sedang"].includes(value)) return "medium";
+    if (["h", "hard", "sulit"].includes(value)) return "hard";
+    if (["ex", "expert", "ekspert"].includes(value)) return "expert";
+    if (["ma", "master"].includes(value)) return "master";
+    if (["in", "insane", "gila", "extreme"].includes(value)) return "insane";
+
+    return null;
+}
+
+// Skor Qumath per grup per mode.
+// Format baru: qumathWins = { [groupKey]: { easy, medium, hard } }
+// Format lama: qumathWins = { easy, medium, hard } (dianggap milik "global")
+function isLegacyQumath(data) {
+    return ["easy", "medium", "hard", "expert", "master", "insane"].some(
+        m => typeof data?.[m] === "number"
+    );
+}
+
+function readQumathScore(user, groupKey, modeKey) {
+    const data = user?.qumathWins;
+
+    if (!data || typeof data !== "object" || Array.isArray(data)) {
+        return 0;
+    }
+
+    if (isLegacyQumath(data)) {
+        return groupKey === "global" ? Number(data[modeKey]) || 0 : 0;
+    }
+
+    const perGroup = data[groupKey];
+
+    if (!perGroup || typeof perGroup !== "object" || Array.isArray(perGroup)) {
+        return 0;
+    }
+
+    return Number(perGroup[modeKey]) || 0;
+}
+
+function recordQumathWin(jid, mode, groupId) {
+    const id = getUserId(jid);
+    const modeKey = normalizeQumathMode(mode);
+
+    if (!id || !modeKey) return 0;
+
+    const users = readUsers();
+
+    if (!users[id]) return 0;
+
+    let store = users[id].qumathWins;
+
+    if (!store || typeof store !== "object" || Array.isArray(store)) {
+        store = {};
+    } else if (isLegacyQumath(store)) {
+        // Migrasi format lama ke per grup ("global" dipertahankan)
+        const legacy = store;
+        store = {};
+        const migrated = {};
+
+        for (const m of ["easy", "medium", "hard", "expert", "master", "insane"]) {
+            const value = Number(legacy[m]) || 0;
+            if (value > 0) migrated[m] = value;
+        }
+
+        if (Object.keys(migrated).length > 0) store.global = migrated;
+    }
+
+    const groupKey = toGroupKey(groupId);
+
+    if (
+        !store[groupKey] ||
+        typeof store[groupKey] !== "object" ||
+        Array.isArray(store[groupKey])
+    ) {
+        store[groupKey] = {};
+    }
+
+    const newScore = (Number(store[groupKey][modeKey]) || 0) + 1;
+    store[groupKey][modeKey] = newScore;
+
+    users[id].qumathWins = store;
+    writeUsers(users);
+
+    return newScore;
+}
+
+function getTopUsersByQumath(mode, groupId, memberIds = null, limit = 10, excludeIds = null) {
+    const modeKey = normalizeQumathMode(mode);
+
+    if (!modeKey) return [];
+
+    const groupKey = toGroupKey(groupId);
+    const users = readUsers();
+    let list = Object.values(users);
+
+    if (memberIds && memberIds instanceof Set) {
+        list = list.filter(u => memberIds.has(u.id));
+    }
+
+    if (excludeIds && excludeIds instanceof Set) {
+        list = list.filter(u => !excludeIds.has(u.id));
+    }
+
+    return list
+        .map(u => ({
+            id: u.id,
+            name: u.name || "Pengguna",
+            balance: Number(u.balance) || 0,
+            qumathScore: readQumathScore(u, groupKey, modeKey),
+            registeredAt: u.registeredAt
+        }))
+        .sort((a, b) => b.qumathScore - a.qumathScore)
+        .slice(0, limit);
+}
+
+function getUserQumathRank(jid, mode, groupId, memberIds = null, excludeIds = null) {
+    const id = getUserId(jid);
+    const modeKey = normalizeQumathMode(mode);
+
+    if (!id || !modeKey) return null;
+
+    const groupKey = toGroupKey(groupId);
+    const users = readUsers();
+    let list = Object.values(users);
+
+    if (memberIds && memberIds instanceof Set) {
+        list = list.filter(u => memberIds.has(u.id));
+    }
+
+    if (excludeIds && excludeIds instanceof Set) {
+        list = list.filter(u => !excludeIds.has(u.id));
+    }
+
+    const sorted = list
+        .map(u => ({
+            id: u.id,
+            score: readQumathScore(u, groupKey, modeKey)
+        }))
+        .sort((a, b) => b.score - a.score);
+
+    const index = sorted.findIndex(u => u.id === id);
+
+    if (index === -1) return null;
+
+    return {
+        rank: index + 1,
+        total: sorted.length,
+        score: sorted[index].score
+    };
+}
+
 module.exports = {
     getUserId,
     getUser,
@@ -635,8 +859,13 @@ module.exports = {
     recordTebakGambarWin,
     getTopUsersByBalance,
     getTopUsersByTG,
+    getUserTGRank,
     getUserRankByField,
     recordQuizWin,
     getTopUsersByQuiz,
-    getUserQuizRank
+    getUserQuizRank,
+    normalizeQumathMode,
+    recordQumathWin,
+    getTopUsersByQumath,
+    getUserQumathRank
 };

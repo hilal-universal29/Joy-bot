@@ -3,6 +3,8 @@ const MAX_MESSAGE_AGE_SECONDS = 20;
 
 const ownerCommands = require("../commands/owner");
 const reg = require("../commands/system/reg");
+const tiktok = require("../commands/downloader/tiktok");
+const mp3 = require("../commands/downloader/mp3");
 const daily = require("../commands/economy/daily");
 const transaction = require("../commands/economy/transaction");
 const bot = require("../config/bot");
@@ -14,13 +16,15 @@ const tebakangka = require("../commands/games/tebakangka");
 const tebakgambar = require("../commands/games/tebakgambar");
 const tebaklogo = require("../commands/games/tebaklogo");
 const quiz = require("../commands/games/quiz");
+const qumath = require("../commands/games/qumath");
 const slot = require("../commands/games/slot");
 const sticker = require("../commands/media/sticker");
-const tomed = require("../commands/media/tomed");
 const brat = require("../commands/media/brat");
+const tomed = require("../commands/media/tomed");
 const shop = require("../commands/economy/shop");
 const inventory = require("../commands/economy/inventory");
 const leaderboard = require("../database/leaderboard");
+
 
 
 async function resolveSenderJid(Joy, msg) {
@@ -179,6 +183,8 @@ async function messageHandler(Joy, m) {
             return;
         }
 
+        let isGameReply = false;
+
         if (
             Joy.activeQuiz?.[sender] &&
             (quotedText.includes("KUIS TRIVIA") || Joy.activeQuiz[sender].msgId === quotedId)
@@ -190,7 +196,28 @@ async function messageHandler(Joy, m) {
                 text,
                 false
             );
-            // Selalu return agar AI tidak ikut menjawab soal kuis
+            return;
+        } else if (
+            Joy.qumath?.[sender] &&
+            (quotedText.includes("KUIS MATEMATIKA") || Joy.qumath[sender].msgId === quotedId)
+        ) {
+            await qumath.handleAnswer(
+                Joy,
+                msg,
+                reply,
+                text,
+                false
+            );
+            return;
+        }
+
+        // Jika ada game apapun yang sedang aktif, jangan biarkan AI ikut campur saat user me-reply pesan bot
+        if (
+            Joy.tebakgambar?.[sender] ||
+            Joy.tebaklogo?.[sender] ||
+            Joy.activeQuiz?.[sender] ||
+            Joy.qumath?.[sender]
+        ) {
             return;
         }
 
@@ -229,7 +256,22 @@ async function messageHandler(Joy, m) {
         if (answered) return;
     }
 
-    // Abaikan pesan yang bukan command
+    // Deteksi jawaban kuis matematika langsung di chat (angka)
+    if (Joy.qumath?.[sender] && text && !text.startsWith(bot.prefix)) {
+        const answered = await qumath.handleAnswer(
+            Joy,
+            msg,
+            reply,
+            text,
+            true
+        );
+        if (answered) return;
+    }
+
+    // Hanya command berprefix yang diproses sampai sini. Pesan biasa tanpa
+    // prefix (termasuk jawaban game) sudah ditangani/diabaikan di atas, sehingga
+    // game yang sedang aktif tidak pernah dimatikan oleh command lain, dan
+    // command seperti .nyerah/.menu tetap sampai ke dispatcher meski game aktif.
     if (!text.startsWith(bot.prefix)) return;
 
     const commandText =
@@ -316,6 +358,9 @@ async function messageHandler(Joy, m) {
             } else if (Joy.activeQuiz?.[sender]) {
                 // Kuis tidak memiliki fitur clue
                 await reply("💡 Game *Kuis Trivia* tidak memiliki fitur clue.");
+            } else if (Joy.qumath?.[sender]) {
+                // Kuis matematika tidak memiliki fitur clue
+                await reply("💡 Game *Kuis Matematika* tidak memiliki fitur clue.");
             } else {
                 await reply("❌ Tidak ada game yang sedang berlangsung di chat ini.");
             }
@@ -334,12 +379,27 @@ async function messageHandler(Joy, m) {
             );
             break;
 
+        // KUIS MATEMATIKA
+        case "qumath":
+        case "kumath":
+        case "qumatematika":
+        case "qmath":
+            await qumath(
+                Joy,
+                msg,
+                reply,
+                args,
+                command
+            );
+            break;
+
         // NYERAH UNIVERSAL (tebakgambar & quiz)
         case "nyerah":
         case "surrender": {
             const hasTG = !!Joy.tebakgambar?.[sender];
             const hasTL = !!Joy.tebaklogo?.[sender];
             const hasQuiz = !!Joy.activeQuiz?.[sender];
+            const hasQumath = !!Joy.qumath?.[sender];
 
             if (hasTG) {
                 await tebakgambar(
@@ -354,8 +414,10 @@ async function messageHandler(Joy, m) {
                 await tebaklogo.handleNyerah(Joy, msg, reply, { callerJid: actualSender, isAuthor });
             } else if (hasQuiz) {
                 await quiz.handleNyerah(Joy, msg, reply, { callerJid: actualSender, isAuthor });
+            } else if (hasQumath) {
+                await qumath.handleNyerah(Joy, msg, reply, { callerJid: actualSender, isAuthor });
             } else {
-                await reply("❌ Tidak ada game yang sedang berlangsung di chat ini.");
+                await reply("*Tidak ada game yang sedang berlangsung di chat ini.*");
             }
             break;
         }
@@ -447,6 +509,16 @@ async function messageHandler(Joy, m) {
             );
             break;
 
+        // BRAT
+        case "brat":
+            await brat(
+                Joy,
+                msg,
+                reply,
+                args
+            );
+            break;
+
         // STICKER
         case "sticker":
         case "s":
@@ -464,16 +536,6 @@ async function messageHandler(Joy, m) {
                 Joy,
                 msg,
                 reply
-            );
-            break;
-
-        // BRAT
-        case "brat":
-            await brat(
-                Joy,
-                msg,
-                reply,
-                args
             );
             break;
 
@@ -498,20 +560,27 @@ async function messageHandler(Joy, m) {
             );
             break;
 
-        case "leaderboard":
-        case "lb":
-        case "top":
+                // leaderboard
+
         case "topbalance":
         case "ldbalance":
         case "leadbalance":
         case "lbbalance":
+            
         case "leadtg":
         case "leadertg":
         case "lbtg":
+
         case "leadquiz":
         case "ldquiz":
         case "leaderquiz":
         case "lbquiz":
+
+        case "leadqumath":
+        case "leadkumath":
+        case "ldqumath":
+        case "lbqumath":
+        case "leadmath":
             await leaderboard(
                 Joy,
                 msg,
@@ -521,10 +590,36 @@ async function messageHandler(Joy, m) {
             );
             break;
 
+        // TIKTOK DOWNLOADER
+        case "ttdl":
+        case "tiktok":
+            await tiktok.execute(
+                Joy,
+                msg,
+                args
+            );
+            break;
 
+        // MP3 DOWNLOADER
+        case "mp3":
+            await mp3.execute(
+                Joy,
+                msg,
+                args
+            );
+            break;
+
+
+        case "say":
+
+            await ownerCommands(
+                Joy,
+                msg,
+                reply,
+                args
+            );
 
         // AUTHOR ONLY
-        case "say":
         case "restart":
         case "debug":
         case "ping":

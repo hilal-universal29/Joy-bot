@@ -1,5 +1,6 @@
 module.exports = `*GAMES MENU*
 • .quiz
+• .qumath e/m/h/ex/ma/in
 • .tebakgambar 
 • .tebakangka 
 • .tebaklogo
@@ -11,5 +12,6 @@ module.exports = `*GAMES MENU*
     
 *LEADERBOARD*
 • .leadquiz
+• .leadqumath e/m/h/ex/ma/in
 • .leadtg
 `;

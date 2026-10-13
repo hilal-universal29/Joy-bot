@@ -1,35 +1,17 @@
-const suppressedSessionMessages = [
-    "Closing session:",
-    "Closing stale open session",
-    "Closing open session in favor of incoming prekey bundle",
-    "Decrypted message with closed session",
-    "Removing old closed session:",
-    "Opening session:"
-];
+/* =========================================================
+   JOY CONSOLE - LOGGING INTEGRATION
+   ---------------------------------------------------------
+   Seluruh output console.* Joybot (termasuk filter pesan sesi
+   Baileys) kini ditangani oleh Joy Console:
+   - disimpan ke file log + buffer memori
+   - WARNING/ERROR tampil di dashboard
+   - pesan masuk tidak membanjiri dashboard utama
+   Implementasi logging ada di console/logger.js.
+========================================================= */
 
-function shouldSuppressSessionLog(args) {
-    const message =
-        typeof args[0] === "string"
-            ? args[0]
-            : "";
+const JoyConsole = require("./console");
 
-    return suppressedSessionMessages.some(
-        (prefix) => message.includes(prefix)
-    );
-}
-
-for (const method of ["log", "info", "warn"]) {
-    const originalMethod =
-        console[method].bind(console);
-
-    console[method] = (...args) => {
-        if (shouldSuppressSessionLog(args)) {
-            return;
-        }
-
-        originalMethod(...args);
-    };
-}
+JoyConsole.init();
 
 const {
   makeWASocket,
@@ -677,95 +659,95 @@ async function loadingStep(
    SYSTEM STATUS
 ========================================================= */
 
-async function showSystemStatus() {
+// async function showSystemStatus() {
 
-  console.log(
-    chalk.cyan(
-      "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    )
-  );
+//   console.log(
+//     chalk.cyan(
+//       "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+//     )
+//   );
 
-  await sleep(150);
-
-
-  const systems = [
-
-    "Initializing...",
-
-    "Loading configuration...",
-
-    "Loading command handler...",
-
-    "Loading database...",
-
-    "Loading AI engine..."
-
-  ];
+//   await sleep(150);
 
 
-  for (
-    const system of systems
-  ) {
+//   const systems = [
 
-    await loadingStep(
-      system
-    );
+//     "Initializing...",
 
-    await sleep(80);
-  }
+//     "Loading configuration...",
 
+//     "Loading command handler...",
 
-  console.log("");
+//     "Loading database...",
 
+//     "Loading AI engine..."
 
-  const modules = [
-
-    "AI SYSTEM",
-
-    "GAME SYSTEM",
-
-    "MEDIA SYSTEM",
-
-    "DOWNLOADER"
-
-  ];
+//   ];
 
 
-  for (
-    const module of modules
-  ) {
+//   for (
+//     const system of systems
+//   ) {
 
-    await typeText(
-      chalk.green(
-        `  [ ✓ ] ${module}`
-      ),
-      10
-    );
+//     await loadingStep(
+//       system
+//     );
 
-    await sleep(20);
-  }
+//     await sleep(80);
+//   }
 
 
-  console.log(
-    chalk.cyan(
-      "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    )
-  );
+//   console.log("");
 
 
-  await sleep(100);
+//   const modules = [
+
+//     "AI SYSTEM",
+
+//     "GAME SYSTEM",
+
+//     "MEDIA SYSTEM",
+
+//     "DOWNLOADER"
+
+//   ];
 
 
-  await typeText(
-    chalk.yellow(
-      "  [ WHATSAPP ] Connecting..."
-    ),
-    20
-  );
+//   for (
+//     const module of modules
+//   ) {
+
+//     await typeText(
+//       chalk.green(
+//         `  [ ✓ ] ${module}`
+//       ),
+//       10
+//     );
+
+//     await sleep(20);
+//   }
 
 
-  await sleep(100);
-}
+//   console.log(
+//     chalk.cyan(
+//       "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+//     )
+//   );
+
+
+//   await sleep(100);
+
+
+//   await typeText(
+//     chalk.yellow(
+//       "  [ WHATSAPP ] Connecting..."
+//     ),
+//     20
+//   );
+
+
+//   await sleep(100);
+// }
 
 
 /* =========================================================
@@ -773,15 +755,12 @@ async function showSystemStatus() {
 ========================================================= */
 
 async function showBanner() {
-
-  console.clear();
-
-  await renderLogoWithText();
-
-  await sleep(250);
-
-  await showSystemStatus();
+    JoyConsole.setStartupBanner(renderLogoWithText);
+    await JoyConsole.startup();
+    await connectToWhatsApp();
 }
+
+showBanner();
 
 
 /* =========================================================
@@ -953,6 +932,15 @@ Joy.sendMessage = async (...args) => {
 
 
   /* =======================================================
+     JOY CONSOLE ATTACH
+     Memberi tahu Joy Console socket yang sedang aktif.
+     TIDAK membuat koneksi WhatsApp baru.
+  ======================================================= */
+
+  JoyConsole.attachSocket(Joy);
+
+
+  /* =======================================================
      PAIRING CODE
   ======================================================= */
 
@@ -1012,6 +1000,9 @@ Joy.sendMessage = async (...args) => {
       const {
         connection
       } = update;
+
+      // Joy Console: perbarui status koneksi WhatsApp.
+      JoyConsole.setConnection(connection, update);
 
 
       if (
@@ -1085,6 +1076,10 @@ Joy.sendMessage = async (...args) => {
         return;
       }
 
+      // Joy Console: catat aktivitas pesan (tidak menghambat proses).
+      // Dedupe berdasarkan id pesan ada di console/index.js.
+      JoyConsole.recordMessage(msg);
+
 
       const body =
         msg.message.conversation ||
@@ -1136,10 +1131,18 @@ Joy.sendMessage = async (...args) => {
           error
         );
 
+        // Joy Console: simpan error handler + tandai status ERROR.
+        JoyConsole.recordError(error, "messageHandler");
+
       }
 
     }
   );
+
+
+  // Joy Console: mulai dashboard + prompt setelah semua
+  // listener terpasang dan pairing (jika ada) selesai.
+  JoyConsole.ready();
 }
 
 
@@ -1147,8 +1150,8 @@ Joy.sendMessage = async (...args) => {
    START JOYBOT
 ========================================================= */
 
-showBanner().then(() => {
+// showBanner().then(() => {
 
-  connectToWhatsApp();
+//   connectToWhatsApp();
 
-});
+// });
