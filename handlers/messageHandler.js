@@ -18,6 +18,7 @@ const tebaklogo = require("../commands/games/tebaklogo");
 const quiz = require("../commands/games/quiz");
 const qumath = require("../commands/games/qumath");
 const slot = require("../commands/games/slot");
+const say = require("../commands/owner/say");
 const sticker = require("../commands/media/sticker");
 const brat = require("../commands/media/brat");
 const tomed = require("../commands/media/tomed");
@@ -115,6 +116,8 @@ async function messageHandler(Joy, m) {
     const body =
         msg.message.conversation ||
         msg.message.extendedTextMessage?.text ||
+        msg.message.imageMessage?.text ||
+        msg.message.videoMessage?.text ||
         "";
 
     const text = body.trim();
@@ -446,19 +449,22 @@ async function messageHandler(Joy, m) {
             break;
 
         // AI CHAT
-        case "ai":
-            await aiHandler.handleCommand(
-                Joy,
-                msg,
-                reply,
-                args,
-                command,
-                {
-                    errorMessage:
-                        "⚠ *Gagal Saat Melakukan Proses*"
-                }
-            );
-            break;
+
+            case "ai":
+            case "groq":
+            case "Groq":
+                await aiHandler.handleCommand(
+                    Joy,
+                    msg,
+                    reply,
+                    args,
+                    command,
+                    {
+                        errorMessage: "⚠ Gagal saat memproses pertanyaan."
+                    }
+                );
+                break;
+
 
         // REGISTRASI
         case "reg":
@@ -611,13 +617,13 @@ async function messageHandler(Joy, m) {
 
 
         case "say":
-
-            await ownerCommands(
+            await say(
                 Joy,
                 msg,
                 reply,
                 args
             );
+            break;
 
         // AUTHOR ONLY
         case "restart":

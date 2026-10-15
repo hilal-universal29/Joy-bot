@@ -1,15 +1,18 @@
-const Groq = require("../../scrape/Groq");
+
+const Groq = require('../../scrape/Groq');
 
 async function askAI(prompt) {
-    const response = await Groq(prompt);
+    const response = await Groq(prompt);  
 
     if (typeof response === "string") {
         return response.trim();
     }
 
-    return (
-        response?.choices?.[0]?.message?.content?.trim() || ""
-    );
+    return response?.candidates?.[0]
+        ?.content?.parts
+        ?.map(part => part.text || "")
+        .join("")
+        .trim() || "";
 }
 
 async function handleCommand(
@@ -25,20 +28,19 @@ async function handleCommand(
 
     if (!question) {
         return reply(
-            '*Contoh:* .ai Kenapa Messi disebut GOAT?'
+            `*Contoh:* .${command} Kenapa Messi disebut GOAT?`
         );
     }
- 
+
     try {
         const answer = await askAI(question);
 
         return await reply(
-            answer ||
-            "Maaf, aku belum menemukan jawaban yang pas."
+            answer || "Maaf, aku belum menemukan jawaban yang pas."
         );
     } catch (error) {
         console.error(
-            "Error AI:",
+            "Error Groq:",
             error.response?.data || error.message
         );
 
@@ -57,7 +59,6 @@ async function handleReply(
     quotedText = ""
 ) {
     const question = String(body || "").trim();
-
     if (!question) return;
 
     const prompt = quotedText
@@ -77,12 +78,11 @@ Hindari sapaan umum yang tidak relevan.`
         const answer = await askAI(prompt);
 
         return await reply(
-            answer ||
-            "Maaf, aku belum menemukan jawaban yang pas."
+            answer || "Maaf, aku belum menemukan jawaban yang pas."
         );
     } catch (error) {
         console.error(
-            "Error reply AI:",
+            "Error reply Groq:",
             error.response?.data || error.message
         );
 
